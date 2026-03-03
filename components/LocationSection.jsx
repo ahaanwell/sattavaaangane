@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 const landmarks = [
@@ -43,27 +44,27 @@ export default function LocationSection() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Sattva Aaranya location map — Bellandur, Bangalore"
-              aria-label="Google Maps showing Sattva Aaranya location in Bellandur, Bangalore"
+              title="Sattva Aangane location map — Bellandur, Bangalore"
+              aria-label="Google Maps showing Sattva Aangane location in Bellandur, Bangalore"
             />
           </div>
 
           {/* Know More CTA */}
-          <a
+          <Link
             href="https://maps.google.com/?q=Bellandur,Bangalore"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Know more about Sattva Aaranya location in Bellandur Bangalore"
+            aria-label="Know more about Sattva Aangane location in Bellandur Bangalore"
             className="block w-full bg-primary hover:bg-blue-800 text-white text-center font-semibold text-lg py-4 transition-colors duration-200"
           >
             Know More About Location
-          </a>
+          </Link>
         </div>
 
         {/* Landmarks Grid */}
         <ul
           className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 max-w-3xl mx-auto"
-          aria-label="Nearby landmarks and distances from Sattva Aaranya"
+          aria-label="Nearby landmarks and distances from Sattva Aangane"
         >
           {landmarks.map((item, i) => (
             <li key={i} className="flex items-center gap-3 py-3 border-b border-gray-100">

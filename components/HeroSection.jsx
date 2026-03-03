@@ -15,6 +15,7 @@ export default function HeroSection() {
   const [current, setCurrent] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modelHeading, SetModelHeading] = useState("");
+  const [modelBtnLabel, setModelBtnLabel] = useState("");
   const [loading, setLoading] = useState(false);
   const [leadData, setLeadData] = useState({
     name: "",
@@ -47,7 +48,7 @@ export default function HeroSection() {
       number,
       country_code: countryCode,
       company_email: "info@searchmyspace.in",
-      project_name: "Sattva Aaranya",
+      project_name: "Sattva Aangane",
     };
 
     try {
@@ -111,7 +112,7 @@ export default function HeroSection() {
 
         {/* Property Details Card */}
         <div className="bg-white px-5 pt-7 pb-5 text-center">
-          <h1 className="text-3xl font-extrabold text-gray-900 mb-1">Sattva Aaranya</h1>
+          <h1 className="text-3xl font-extrabold text-gray-900 mb-1">Sattva Aangane</h1>
           <p className="text-gray-500 text-sm mb-2">By Sattav Group</p>
           <div className="flex items-center justify-center gap-1 text-gray-500 text-sm mb-6">
             <FaMapMarkerAlt />
@@ -131,12 +132,12 @@ export default function HeroSection() {
           {/* Stats row */}
           <div className="flex gap-3 mb-6">
             <div className="flex-1 border border-gray-200 rounded-xl py-3 px-2 text-center">
-              <p className="text-xs text-gray-400 mb-1">Total Units</p>
-              <p className="text-2xl font-extrabold text-gray-800">2400</p>
-            </div>
-            <div className="flex-1 border border-gray-200 rounded-xl py-3 px-2 text-center">
               <p className="text-xs text-gray-400 mb-1">Land Area</p>
               <p className="text-2xl font-extrabold text-gray-800">42 Acres</p>
+            </div>
+            <div className="flex-1 border border-gray-200 rounded-xl py-3 px-2 text-center">
+              <p className="text-xs text-gray-400 mb-1">Total Units</p>
+              <p className="text-2xl font-extrabold text-gray-800">2400</p>
             </div>
           </div>
 
@@ -148,18 +149,20 @@ export default function HeroSection() {
             <button 
             onClick={()=>{
                 SetModelHeading("Enquire Now For More Details")
+                setModelBtnLabel("Submit")
                 setIsModalOpen(true)
               }}
-            className="flex-1 flex items-center cursor-pointer justify-center gap-2 bg-primary hover:bg-blue-800 text-white font-semibold py-3 rounded-full text-sm transition-colors">
+            className="flex-1 flex items-center cursor-pointer justify-center gap-2 bg-primary text-white font-semibold py-3 rounded-full text-sm transition-colors">
               <FaPhone />
               Enquire Now
             </button>
             <button 
             onClick={()=>{
                 SetModelHeading("Download Brochure")
+                setModelBtnLabel("Download")
                 setIsModalOpen(true)
               }}
-            className="flex-1 flex items-center cursor-pointer justify-center gap-2 border-2 border-blue-700 text-primary hover:bg-blue-50 font-semibold py-3 rounded-full text-sm transition-colors">
+            className="flex-1 flex items-center cursor-pointer justify-center gap-2 border-2 border-red-700 text-primary hover:bg-blue-50 font-semibold py-3 rounded-full text-sm transition-colors">
               <FaDownload />
               Brochure
             </button>
@@ -214,7 +217,7 @@ export default function HeroSection() {
           <div className="flex-1 text-white">
             <div className="inline-block bg-black/20 px-6 py-3 rounded-md mb-5">
               <div className="text-2xl xl:text-3xl font-extrabold tracking-wide">
-                Sattva Aaranya
+                Sattva Aangane
               </div>
             </div>
 
@@ -225,12 +228,12 @@ export default function HeroSection() {
 
             <div className="flex gap-4 mb-6">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3 text-center min-w-[120px]">
-                <p className="text-sm text-white/70 mb-1">Total Units</p>
-                <p className="text-xl font-extrabold">2400</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3 text-center min-w-[120px]">
                 <p className="text-sm text-white/70 mb-1">Land Area</p>
                 <p className="text-xl font-extrabold">42 Acres</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3 text-center min-w-[120px]">
+                <p className="text-sm text-white/70 mb-1">Total Units</p>
+                <p className="text-xl font-extrabold">2400</p>
               </div>
             </div>
 
@@ -245,6 +248,7 @@ export default function HeroSection() {
               <button 
               onClick={()=>{
                 SetModelHeading("Enquire Now For More Details")
+                setModelBtnLabel("Submit")
                 setIsModalOpen(true)
               }}
               className="flex items-center cursor-pointer gap-2 bg-primary hover:bg-blue-800 text-white font-semibold px-7 py-3 rounded-full transition-colors">
@@ -254,6 +258,7 @@ export default function HeroSection() {
               <button 
               onClick={()=>{
                 SetModelHeading("Download Brochure")
+                setModelBtnLabel("Download")
                 setIsModalOpen(true)
               }}
               className="flex items-center cursor-pointer gap-2 bg-transparent hover:bg-white/10 text-white font-semibold border-2 border-white px-7 py-3 rounded-full transition-colors">
@@ -317,7 +322,7 @@ export default function HeroSection() {
                 disabled={loading}
                 className="w-full bg-primary cursor-pointer hover:bg-blue-800 text-white font-bold py-3.5 rounded-xl transition-colors text-base"
               >
-                {loading ? "Submitting..." : "Submit Now"}
+                {loading ? "Booking..." : "Book Now"}
               </button>
               <label className="flex items-start gap-2">
                 <input
@@ -335,7 +340,7 @@ export default function HeroSection() {
         </div>
       </section>
 
-      <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modelHeading={modelHeading} />
+      <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modelHeading={modelHeading} modelBtnLabel={modelBtnLabel} />
     </>
   );
 }

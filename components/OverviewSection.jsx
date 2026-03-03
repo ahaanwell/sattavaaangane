@@ -2,22 +2,22 @@ import { FaHome, FaMapMarkedAlt, FaBuilding, FaShieldAlt } from "react-icons/fa"
 
 const highlights = [
   {
-    icon: <FaHome className="text-blue-900 text-4xl" />,
+    icon: <FaHome className="text-primary text-4xl" />,
     title: "2400 Units",
     description: "Premium residential units across 42 acres",
   },
   {
-    icon: <FaMapMarkedAlt className="text-blue-900 text-4xl" />,
+    icon: <FaMapMarkedAlt className="text-primary text-4xl" />,
     title: "Prime Location",
     description: "Bellandur, Bangalore",
   },
   {
-    icon: <FaBuilding className="text-blue-900 text-4xl" />,
+    icon: <FaBuilding className="text-primary text-4xl" />,
     title: "Spacious Homes",
     description: "3 & 4 BHK premium apartments",
   },
   {
-    icon: <FaShieldAlt className="text-blue-900 text-4xl" />,
+    icon: <FaShieldAlt className="text-primary text-4xl" />,
     title: "RERA Approved",
     description: "Fully compliant and transparent",
   },
@@ -36,7 +36,7 @@ export default function OverviewSection() {
           id="overview-heading"
           className="text-3xl md:text-4xl font-extrabold text-gray-900 text-center mb-8"
         >
-          Sattva Aaranya
+          Sattva Aangane
         </h2>
 
         {/* Description — keyword-rich for SEO */}
@@ -53,14 +53,14 @@ export default function OverviewSection() {
         </div>
 
         {/* Highlight Cards */}
-        <ul
+        <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
-          aria-label="Sattva Aaranya highlights"
+          aria-label="Sattva Aangane highlights"
         >
           {highlights.map((item, index) => (
-            <li
+            <div
               key={index}
-              className="bg-blue-50 rounded-2xl p-6 flex flex-col gap-4 hover:shadow-md transition-shadow duration-300"
+              className="bg-red-50 rounded-2xl p-6 flex flex-col gap-4 hover:shadow-md transition-shadow duration-300"
             >
               {/* Icon */}
               <div aria-hidden="true">{item.icon}</div>
@@ -70,9 +70,9 @@ export default function OverviewSection() {
 
               {/* Description */}
               <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
 
       </div>
     </section>

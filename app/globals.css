@@ -3,13 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+    --font-sans: 'Poppins', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,18 +21,24 @@
 }
 
 body {
+  font-family: var(--font-sans);
+}
+
+body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
 
 .bg-primary{
-  background-color: #0044ba;
+  background-color: #ce3125;
 }
 
 .text-primary{
-  color: #003082;
+  color: #ce3125;
 }
+
+/* 003082 */
 
 /* globals.css */
 

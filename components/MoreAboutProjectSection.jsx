@@ -9,7 +9,7 @@ export default function MoreAboutProjectSection() {
         {/* ── Block 1 ── */}
         <div>
           <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
-            Sattva Aaranya – Premium Apartments in Bellandur, Bangalore
+            Sattva Aangane – Premium Apartments in Bellandur, Bangalore
           </h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis deleniti illum ratione deserunt vitae sed, aspernatur eveniet vero asperiores debitis facere, nemo quos molestiae magni provident voluptatibus pariatur suscipit nisi.

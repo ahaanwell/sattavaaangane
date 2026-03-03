@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <div className="bg-white p-4 mt-4 flex flex-col gap-3 relative border border-gray-200">
+      <div className="bg-white p-4 flex flex-col gap-3 relative border border-gray-200">
 
         {/* Disclaimer */}
         <div className="lg:px-6">

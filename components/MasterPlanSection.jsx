@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FaPhone } from "react-icons/fa";
+import { FaDownload, FaPhone } from "react-icons/fa";
 import LeadModal from "./LeadModal";
 
 export default function MasterPlanSection() {
@@ -51,10 +51,10 @@ export default function MasterPlanSection() {
                 SetModelHeading("Download Master Plan")
                 setIsModalOpen(true)
               }}
-                className="flex cursor-pointer items-center gap-2 bg-transparent border-2 border-white text-white font-semibold text-lg px-8 py-3 rounded-sm hover:bg-white hover:text-gray-900 transition-colors duration-200"
+                className="flex cursor-pointer items-center gap-2 bg-transparent border-2 border-white text-white font-semibold text-lg px-5 py-2 rounded-sm hover:bg-white hover:text-gray-900 transition-colors duration-200"
               >
-                <FaPhone />
-                Enquire Now
+                <FaDownload />
+                Download Now
               </button>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function MasterPlanSection() {
 
         </div>
       </div>
-      <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modelHeading={modelHeading} />
+      <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modelHeading={modelHeading} modelBtnLabel="Download" />
     </section>
   );
 }

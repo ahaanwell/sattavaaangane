@@ -40,32 +40,73 @@ export default function PriceListSection() {
         <div className="flex flex-col lg:flex-row gap-0 ">
 
           {/* Left — Price Table */}
-          <div className="flex-1 overflow-x-auto">
-            <table className="w-full text-sm md:text-base" role="table" aria-label="Apartment types and pricing">
-              <thead>
-                <tr className="border border-gray-200">
-                  <th className="py-1 px-2 font-bold text-gray-800 text-center w-1/4">Unit Type</th>
-                  <th className="py-1 px-2 font-bold text-gray-800 text-center w-1/3">Size</th>
-                  <th className="py-1 px-2 font-bold text-gray-800 text-center w-1/3">Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceData.map((row, i) => (
-                  <tr
-                    key={i}
-                    onClick={() => setActiveIndex(i)}
-                    className={"border-b border-gray-100 cursor-pointer transition-colors duration-200 hover:bg-gray-50"}
-                  >
-                    <td className={"py-2 px-2 border-b border-gray-200 text-center text-gray-700"}>
-                      {row.type}
-                    </td>
-                    <td className="py-2 px-2 border-b border-gray-200 text-center text-gray-600">{row.size}</td>
-                    <td className="py-2 px-2 border-b border-gray-200 text-center text-gray-600">{row.price}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          {/* Left — Price Table (Desktop) */}
+<div className="flex-1 overflow-x-auto hidden md:block">
+  <table
+    className="w-full text-sm md:text-base"
+    role="table"
+    aria-label="Apartment types and pricing"
+  >
+    <thead>
+      <tr className="border bg-primary text-white border-gray-200">
+        <th className="py-1 px-2 font-bold text-center w-1/4">Unit Type</th>
+        <th className="py-1 px-2 font-bold text-center w-1/3">Size</th>
+        <th className="py-1 px-2 font-bold text-center w-1/3">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {priceData.map((row, i) => (
+        <tr
+          key={i}
+          className="border-b border-gray-300 hover:bg-gray-50 transition"
+        >
+          <td className="py-2 px-2 text-center text-black">{row.type}</td>
+          <td className="py-2 px-2 text-center text-black">{row.size}</td>
+          <td className="py-2 px-2 text-center font-medium text-primary">
+            {row.price}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+{/* Mobile Card Layout */}
+<div className="md:hidden flex flex-col gap-5 px-2">
+  {priceData.map((row, i) => (
+    <div
+      key={i}
+      className="bg-gray-100 border border-gray-300 rounded-md p-6 text-center shadow-sm"
+    >
+      {/* Unit Type */}
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+        {row.type}
+      </h3>
+
+      {/* Size */}
+      <p className="text-sm text-gray-700 mb-2">
+        {row.size}
+      </p>
+
+      {/* Price */}
+      <p className="text-lg font-bold text-black mb-4">
+        {row.price}
+      </p>
+
+      {/* Button */}
+      <button
+        onClick={() => {
+          SetModelHeading(`${row.type} - Price Breakup`);
+          setIsModalOpen(true);
+        }}
+        className="w-full flex justify-center items-center gap-2 bg-primary text-white py-2 rounded-sm font-medium hover:opacity-90 transition"
+      >
+        <FaDownload/>
+        Download Now
+      </button>
+    </div>
+  ))}
+</div>
           <div className="px-4 md:px-0">
             <img 
             className="w-full"
@@ -80,7 +121,7 @@ export default function PriceListSection() {
           </div>
         </div>
       </div>
-      <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modelHeading={modelHeading} />
+      <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modelHeading={modelHeading} modelBtnLabel="Download" />
     </section>
   );
 }

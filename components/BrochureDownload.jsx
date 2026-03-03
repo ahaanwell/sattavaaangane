@@ -37,7 +37,7 @@ export default function BrochureDownload({topPosition, frmName}) {
       email,
       number,
       company_email: "info@searchmyspace.in",
-      project_name: "Sattva Aaranya",
+      project_name: "Sattva Aangane",
     };
 
     try {
@@ -112,7 +112,7 @@ export default function BrochureDownload({topPosition, frmName}) {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-white hover:bg-gray-100 text-blue-700 font-bold py-2 rounded-lg transition-colors duration-200 text-sm disabled:opacity-70 cursor-pointer"
+              className="w-full bg-white hover:bg-gray-100 text-primary font-bold py-2 rounded-lg transition-colors duration-200 text-sm disabled:opacity-70 cursor-pointer"
             >
               {loading ? "Downloading..." : "Download"}
             </button>
@@ -123,7 +123,7 @@ export default function BrochureDownload({topPosition, frmName}) {
         <button
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label={isOpen ? "Close brochure panel" : "Open brochure panel"}
-          className="bg-primary hover:bg-blue-800 text-white rounded-r-lg shadow-lg cursor-pointer flex flex-col items-center justify-start gap-2 px-[5px] py-2 self-start mt-0 transition-colors duration-200"
+          className="bg-primary text-white rounded-r-lg shadow-lg cursor-pointer flex flex-col items-center justify-start gap-2 px-[5px] py-2 self-start mt-0 transition-colors duration-200"
         >
 
           {/* "Download" on first line, "Broucher" on second line — vertical */}

@@ -11,7 +11,7 @@ export default function BlogSection() {
   return (
     <section
       id="blogs"
-      className="w-full bg-gray-50 pt-14 px-4 md:px-0 border-t border-gray-100"
+      className="w-full bg-gray-50 pt-14 pb-4 px-4 md:px-0 border-t border-gray-100"
     >
       <div className="max-w-5xl mx-auto">
 
@@ -40,7 +40,7 @@ export default function BlogSection() {
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
-                  <div className="w-full h-full bg-blue-600 flex items-center justify-center">
+                  <div className="w-full h-full bg-primary flex items-center justify-center">
                     <span className="text-white text-5xl">🏙️</span>
                   </div>
                 )}
@@ -63,7 +63,7 @@ export default function BlogSection() {
                 {blog.slug && (
                   <Link
                     href={`/${blog.slug}`}
-                    className="mt-1 w-full text-center bg-primary hover:bg-blue-800 text-white font-semibold py-3 rounded-lg transition-colors text-sm"
+                    className="mt-1 w-full text-center bg-primary text-white font-semibold py-3 rounded-lg transition-colors text-sm"
                   >
                     Read More
                   </Link>

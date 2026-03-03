@@ -1,17 +1,21 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BrochureDownload from "@/components/BrochureDownload";
+import MobileBottomBar from "@/components/MobileBottomBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoMono = Roboto_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -81,13 +85,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${robotoMono.variable} antialiased`}
       >
         <Header/>
         <BrochureDownload topPosition={"top-80"} frmName={"Broucher"}/>
-        {/* <BrochureDownload topPosition={"top-110"} frmName={"Costsheet"}/> */}
         {children}
         <Footer/>
+        <MobileBottomBar/>
       </body>
     </html>
   );

@@ -98,13 +98,13 @@ export default function ProjectHighlights() {
 
         {/* Grid */}
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
-          aria-label="Sattva Aaranya project highlights"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4"
+          aria-label="Sattva Aangane project highlights"
         >
           {highlights.map((item, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-2xl px-5 py-5 flex items-start gap-4 hover:shadow-sm transition-shadow duration-300"
+              className="bg-gray-50 rounded-2xl px-1 sm:px-5 py-3 sm:py-5 flex items-start gap-1 sm:gap-4 hover:shadow-sm transition-shadow duration-300"
             >
               {/* Icon */}
               <div aria-hidden="true" className="mt-1 flex-shrink-0">
@@ -114,7 +114,7 @@ export default function ProjectHighlights() {
               {/* Text */}
               <div>
                 <p className="text-sm text-gray-500 leading-tight mb-1">{item.label}</p>
-                <p className="text-base font-semibold text-gray-800 leading-snug">{item.value}</p>
+                <p className="text-sm font-semibold text-gray-800 leading-snug">{item.value}</p>
               </div>
             </div>
           ))}

@@ -55,7 +55,7 @@ export default function GallerySection() {
         {/* Grid */}
         <div
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4"
-          aria-label="Sattva Aaranya project gallery"
+          aria-label="Sattva Aangane project gallery"
         >
           {galleryImages.map((img, index) => (
             <div

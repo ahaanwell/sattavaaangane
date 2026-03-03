@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaPhone } from "react-icons/fa";
+import { FaDownload, FaPhone } from "react-icons/fa";
 import LeadModal from "./LeadModal";
 
 const floorPlans = [
@@ -51,7 +51,7 @@ export default function FloorPlanSection() {
         {/* Cards Grid */}
         <ul
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-          aria-label="Sattva Aaranya floor plans"
+          aria-label="Sattva Aangane floor plans"
         >
           {floorPlans.map((plan) => (
             <li
@@ -81,10 +81,10 @@ export default function FloorPlanSection() {
                 setIsModalOpen(true)
               }}
                     aria-label={`Enquire about ${plan.label}`}
-                    className="flex cursor-pointer items-center gap-2 bg-transparent border-2 border-white text-white font-semibold text-lg px-8 py-3 rounded-sm hover:bg-white hover:text-gray-900 transition-colors duration-200"
+                    className="flex cursor-pointer items-center gap-2 bg-transparent border-2 border-white text-white font-semibold text-lg px-5 py-2 rounded-sm hover:bg-white hover:text-gray-900 transition-colors duration-200"
                   >
-                    <FaPhone />
-                    Enquire Now
+                    <FaDownload />
+                    Download Now
                   </button>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function FloorPlanSection() {
         </ul>
 
       </div>
-      <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modelHeading={modelHeading} />
+      <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modelHeading={modelHeading} modelBtnLabel="Download" />
     </section>
   );
 }

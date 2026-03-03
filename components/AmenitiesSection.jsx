@@ -40,7 +40,7 @@ export default function AmenitiesSection() {
 
         {/* Grid */}
         <ul
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 lg:gap-7"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 lg:gap-4"
           aria-label="Sattav Aaranya"
         >
           {amenitiesData.map((item) => (
@@ -49,7 +49,7 @@ export default function AmenitiesSection() {
               className="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white"
             >
               {/* Image wrapper */}
-              <div className="w-full flex-1 flex items-center justify-center p-3 h-[70%]">
+              <div className="w-full flex-1 flex items-center justify-center p-3 h-[60%]">
                 <img
                   src={item.image}
                   alt={item.alt}
