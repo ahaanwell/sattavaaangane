@@ -53,21 +53,23 @@ export default function LeadModal({
     const data = {
       name,
       email,
-      number,
+      phone: number,
       country_code: countryCode,
       company_email: "ahaanwell@gmail.com",
       project_name: "Sattva Aangane",
     };
 
+    console.log("data", data);
     try {
       const res = await fetch(
-        "https://smtp-server-sepia.vercel.app/send-email",
+        "https://smtpwithexcel.vercel.app/send-lead",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
         }
       );
+      console.log("res", res);
 
       if (res.ok) {
         alert("Enquiry Submitted Successfully");

@@ -42,13 +42,7 @@ export default function OverviewSection() {
         {/* Description — keyword-rich for SEO */}
         <div className=" mb-12 space-y-4 text-gray-700 text-base md:text-lg leading-relaxed">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit earum eius corrupti consectetur 
-            neque optio error quae, dolorum dolore quod laborum at tenetur perferendis eum fuga repellendus 
-            deserunt aperiam modi culpa natus similique saepe. Provident qui recusandae, iure et, a, cumque eius 
-            magni quaerat neque sint animi? A numquam voluptates modi inventore odio quis vero labore quasi quam 
-            vel officiis earum obcaecati, odit iure ipsa. Iusto autem, in dolorem porro amet nam architecto ipsam 
-            hic eius placeat nesciunt ullam debitis assumenda veritatis fuga ratione explicabo voluptate optio 
-            nulla sunt eum tempore libero omnis. Nihil laborum enim reprehenderit, nam in esse?
+            Sattva Aangane is a completed residential apartment project developed by the reputed real estate brand Sattva Group (formerly Salarpuria Sattva Group) in Bangalore, Karnataka. The project is designed to offer affordable yet comfortable urban living with modern amenities and practical apartment layouts.
           </p>
         </div>
 

@@ -16,7 +16,7 @@ function MasterPlanPage(){
                 <PageHero title={"Master Plan"}/>
             </div>
             <div className="max-w-5xl mx-auto py-10">
-                <h1 className="text-2xl md:text-3xl font-bold text-gray-800 text-center">Sattva Aaranya Master Plan</h1>
+                <h1 className="text-2xl md:text-3xl font-bold text-gray-800 text-center">Sattva Aangane Master Plan</h1>
                 <div className="flex justify-center items-center gap-6 mt-3">
                     <button 
                     onClick={()=>{
