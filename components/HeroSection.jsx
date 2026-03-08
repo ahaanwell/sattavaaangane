@@ -113,30 +113,30 @@ export default function HeroSection() {
         {/* Property Details Card */}
         <div className="bg-white px-5 pt-7 pb-5 text-center">
           <h1 className="text-3xl font-extrabold text-gray-900 mb-1">Sattva Aangane</h1>
-          <p className="text-gray-500 text-sm mb-2">By Sattav Group</p>
-          <div className="flex items-center justify-center gap-1 text-gray-500 text-sm mb-6">
+          <p className="text-gray-800 text-xl mb-2 font-semiblod">By Sattav Group</p>
+          <div className="flex items-center justify-center gap-1 font-medium text-gray-700 text-lg mb-6">
             <FaMapMarkerAlt />
             <span>Kengeri, Mysore Road, West Bengaluru</span>
           </div>
 
           {/* PRE LAUNCH pill */}
-          <button className="w-full bg-primary hover:bg-blue-800 active:bg-blue-900 text-white font-bold py-3 rounded-lg mb-3 tracking-widest text-sm transition-colors">
+          <button className="w-full bg-primary text-white font-bold py-3 rounded-lg mb-3 tracking-widest text-sm transition-colors">
             PRE LAUNCH
           </button>
 
           {/* BHK pill */}
-          <button className="w-full bg-primary hover:bg-blue-800 active:bg-blue-900 text-white font-bold py-3 rounded-lg mb-7 tracking-widest text-sm transition-colors">
+          <button className="w-full bg-primary text-white font-bold py-3 rounded-lg mb-7 tracking-widest text-sm transition-colors">
             3 &amp; 4 BHK
           </button>
 
           {/* Stats row */}
           <div className="flex gap-3 mb-6">
             <div className="flex-1 border border-gray-200 rounded-xl py-3 px-2 text-center">
-              <p className="text-xs text-gray-400 mb-1">Land Area</p>
+              <p className="text-lg text-gray-700 mb-1">Land Area</p>
               <p className="text-2xl font-extrabold text-gray-800">42 Acres</p>
             </div>
             <div className="flex-1 border border-gray-200 rounded-xl py-3 px-2 text-center">
-              <p className="text-xs text-gray-400 mb-1">Total Units</p>
+              <p className="text-lg text-gray-700 mb-1">Total Units</p>
               <p className="text-2xl font-extrabold text-gray-800">2400</p>
             </div>
           </div>
@@ -168,8 +168,8 @@ export default function HeroSection() {
             </button>
           </div>
 
-          <p className="text-[11px] text-gray-400 mt-2">
-            <span className="font-semibold text-gray-500">RERA No:</span>{" "}
+          <p className="text-[15px] text-gray-600 font-medium mt-2">
+            <span className="font-semibold text-gray-700">RERA No:</span>{" "}
             Comming Soon
           </p>
         </div>

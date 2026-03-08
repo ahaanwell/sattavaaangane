@@ -54,7 +54,7 @@ export default function OverviewSection() {
           {highlights.map((item, index) => (
             <div
               key={index}
-              className="bg-red-50 rounded-2xl p-6 flex flex-col gap-4 hover:shadow-md transition-shadow duration-300"
+              className="bg-red-50 rounded-2xl p-6 flex flex-col items-center md:items-start gap-4 hover:shadow-md transition-shadow duration-300"
             >
               {/* Icon */}
               <div aria-hidden="true">{item.icon}</div>
