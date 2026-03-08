@@ -33,7 +33,6 @@ export default async function sitemap() {
     "/location",
     "/master-plan",
     "/amenities",
-    "/broucher-download",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),

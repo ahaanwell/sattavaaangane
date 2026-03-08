@@ -1,11 +1,24 @@
-"use client";
 import Link from "next/link";
-import useBlogs from "@/hooks/useBlogs";
+async function getBlogs() {
+  const res = await fetch(
+    "https://m2nblogcmsapi.vercel.app/api/blogs/project/sattav-aaranya",
+    {
+      headers: {
+        "x-api-key":
+          "sk_sattav_aaranya_97a47e4825b29953cb4889db4325272886090a07bcc1a628",
+      },
+      cache: "no-store",
+    }
+  );
 
-export default function BlogSection() {
+  const data = await res.json();
+  return data.blogs || [];
+}
 
-  const { blogs } = useBlogs();
+export default async function BlogSection() {
 
+  // const { blogs } = useBlogs();
+const blogs = await getBlogs();
   if (!blogs || blogs.length === 0) return null;
 
   return (
@@ -62,7 +75,7 @@ export default function BlogSection() {
 
                 {blog.slug && (
                   <Link
-                    href={`https://www.sattavaaangane.com/${blog.slug}`}
+                    href={`/${blog.slug}`}
                     className="mt-1 w-full text-center bg-primary text-white font-semibold py-3 rounded-lg transition-colors text-sm"
                   >
                     Read More
