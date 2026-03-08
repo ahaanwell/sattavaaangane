@@ -2,6 +2,14 @@
 import LoadingSpinner from "@/components/LoadingSpinner";
 import useBlogDetails from "@/hooks/useBlogDetails";
 // import { global } from "styled-jsx/css";
+
+const toLocalImage = (cloudinaryUrl) => {
+  return cloudinaryUrl.replace(
+    'https://res.cloudinary.com/djdp6aloi/image/upload',
+    '/images'
+  );
+};
+
 export default function BlogDetailsPage({ blogSlug }) {
   const { blogData, loading, error } = useBlogDetails(blogSlug);
 
@@ -16,7 +24,7 @@ export default function BlogDetailsPage({ blogSlug }) {
         </h1>
       <img 
       className="rounded"
-      src={blogData.featuredImage.url} alt={blogData.title} />
+      src={toLocalImage(blogData.featuredImage.url)} alt={blogData.title} />
 
       {/* This renders the HTML content from the editor */}
       <div
