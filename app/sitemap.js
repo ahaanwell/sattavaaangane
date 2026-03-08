@@ -43,6 +43,10 @@ export default async function sitemap() {
       url: "https://www.sattavaaangane.com/amenities",
       lastModified: new Date(),
     },
+    {
+      url: "https://www.sattavaaangane.com/broucher-download",
+      lastModified: new Date(),
+    },
     ...blogUrls,
   ];
 }
