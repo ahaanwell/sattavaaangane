@@ -3,6 +3,9 @@ const config = {
   siteUrl: "https://www.sattavaaangane.com",
   generateRobotsTxt: true,
 
+  generateIndexSitemap: false, // IMPORTANT
+  sitemapSize: 50000,
+
   additionalPaths: async () => {
     const res = await fetch(
       "https://m2nblogcmsapi.vercel.app/api/blogs/project/sattav-aaranya",
@@ -15,7 +18,6 @@ const config = {
     );
 
     const data = await res.json();
-
     const blogs = data?.blogs || [];
 
     return blogs.map((blog) => ({
