@@ -62,7 +62,7 @@ export default function BlogSection() {
 
                 {blog.slug && (
                   <Link
-                    href={`/${blog.slug}`}
+                    href={`https://www.sattavaaangane.com/${blog.slug}`}
                     className="mt-1 w-full text-center bg-primary text-white font-semibold py-3 rounded-lg transition-colors text-sm"
                   >
                     Read More
