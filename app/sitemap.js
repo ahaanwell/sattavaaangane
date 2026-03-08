@@ -11,7 +11,7 @@ export default async function sitemap() {
           "x-api-key":
             "sk_sattav_aaranya_97a47e4825b29953cb4889db4325272886090a07bcc1a628",
         },
-        cache: "no-store",
+        next: { revalidate: 3600 }, // ✅ allow static generation with revalidation
       }
     );
 

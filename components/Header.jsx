@@ -22,7 +22,6 @@ export default function Header() {
     { name: "Location", link: "/location" },
     { name: "Amenities", link: "/amenities" },
     { name: "Gallery", link: "/#gallery" },
-    { name: "Broucher Download", link: "/broucher-download" },
   ];
 
   return (
@@ -60,7 +59,7 @@ export default function Header() {
                 );
               })}
 
-              {/* <button
+              <button
                 onClick={() => {
                   SetModelHeading("Download Brochure");
                   setModelBtnLabel("Download")
@@ -69,7 +68,7 @@ export default function Header() {
                 className="font-medium transition px-3 py-2 text-gray-700 hover:text-[#ce3125]"
               >
                 Brochure
-              </button> */}
+              </button>
             </nav>
 
             {/* Desktop WhatsApp */}
