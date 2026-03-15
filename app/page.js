@@ -1,4 +1,3 @@
-
 import AmenitiesSection from "@/components/AmenitiesSection";
 import BlogSection from "@/components/BlogsSection";
 import FaqSection from "@/components/FaqSection";
@@ -11,18 +10,16 @@ import MoreAboutProjectSection from "@/components/MoreAboutProjectSection";
 import OverviewSection from "@/components/OverviewSection";
 import PriceListSection from "@/components/PriceListSection";
 import ProjectHighlights from "@/components/ProjectHighlights";
-
 export default function Home() {
   return (
     <>
-    
     <HeroSection/>
-    <OverviewSection/>
+    {/* <OverviewSection/> */}
     <ProjectHighlights/>
-    <AmenitiesSection/>
     <PriceListSection/>
     <FloorPlanSection/>
     <MasterPlanSection/>
+    <AmenitiesSection/>
     <GallerySection/>
     <LocationSection/>
     <MoreAboutProjectSection/>

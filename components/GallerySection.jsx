@@ -46,7 +46,7 @@ export default function GallerySection() {
           id="gallery-heading"
           className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
         >
-          Project Gallery
+          Sattva Aangane Gallery
         </h2>
 
         {/* Divider */}

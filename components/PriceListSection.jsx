@@ -5,12 +5,9 @@ import { FaDownload } from "react-icons/fa";
 import LeadModal from "./LeadModal";
 
 const priceData = [
-  { type: "1 BHK",        size: "650 to 777 sq ft",    price: "₹ 80 lakhs onwards" },
-  { type: "2 BHK",        size: "1150 to 1350 sq ft",  price: "₹ 1.44 Cr Onwards" },
-  { type: "3 BHK Smart",  size: "1445 to 1625 sq ft",  price: "₹ 1.80 Cr Onwards" },
-  { type: "3 BHK Luxe",   size: "1675 to 1890 sq ft",  price: "₹ 2.10 Cr Onwards" },
-  { type: "4 BHK Smart",  size: "1915 to 2255 sq ft",  price: "₹ 2.40 Cr Onwards" },
-  { type: "4 BHK Grand",  size: "2365 to 2495 sq ft",  price: "₹ 2.95 Cr Onwards" },
+  { type: "2 BHK",        size: "On Request",    price: "₹ 1.2 Cr* onwards" },
+  { type: "3 BHK",        size: "On Request",  price: "Price On Request" },
+  { type: "4 BHK",  size: "On Request",  price: "Price On Request" },
 ];
 
 export default function PriceListSection() {
@@ -30,13 +27,18 @@ export default function PriceListSection() {
           id="price-list-heading"
           className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
         >
-          Apartment Types &amp; Price
+          Configuration and Price
         </h2>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-200 mb-10" />
+        <div className="w-full h-px bg-gray-200 mb-5" />
 
         {/* Content: Table + Floor Plan */}
+        <div className="text-gray-800 space-x-6 pb-5">
+          <p>
+          The project offers multiple apartment configurations designed to meet the needs of different homebuyers.
+        </p>
+        </div>
         <div className="flex flex-col lg:flex-row gap-0 ">
 
           {/* Left — Price Table */}
@@ -119,7 +121,51 @@ export default function PriceListSection() {
               }}
             className="flex items-center justify-center text-center gap-2 px-3 py-3 bg-primary text-white w-full font-medium cursor-pointer"><FaDownload />Complete Costing Details</button>
           </div>
+
         </div>
+        <div className="pt-10 text-gray-800">
+
+  <h2 className="text-2xl font-semibold mb-6">
+    Apartment Types &amp; Price Table – Sattva Aangane
+  </h2>
+
+  <div className="space-y-6">
+
+    <p>
+      <strong>Sattva Aangane</strong> has a range of modern, large flats that are made to fit the wants of different
+      buyers. There are <b>2 BHK, 3 BHK, and 4 BHK homes</b> in the building. Each one was carefully
+      designed to have modern interiors, good ventilation, and comfy living areas. The plans of these
+      homes are useful, making the most of the room that can be used while still providing privacy
+      and functionality.
+    </p>
+
+    <p>
+      The project will be an advanced private residential tower located at Budigere Cross on Old
+      Madras Main Road. With four towers that go up to <b>G+35 floors</b>, the flats have great views of
+      the city and planted green areas. The apartments are made so that they can fit both small
+      families and bigger families who want more space to live.
+    </p>
+
+    <p>
+      Apartments at Sattva Aangane start at about <b>₹ 1.2 Crore</b>, which makes it a good choice for
+      people in East Bangalore who want to buy modern houses. Prices may change based on
+      things like the size of the flat, its floor level, its location in the tower, and the way it faces. The
+      project offers a range of unit sizes so that buyers can find homes that meet their needs for
+      room and fit their lifestyle.
+    </p>
+
+    <p>
+      The 2 BHK homes are great for workers and small families, while the <b>3 BHK flats</b> have more
+      room for families to live comfortably. The 4 BHK apartments are the largest in the building and
+      are made for people who want bigger luxury homes. These apartment choices give buyers the
+      freedom to choose houses that fit their price and way of life. Sattva Aangane aims to provide a
+      peaceful and premium living experience in East Bangalore through its large floor plans,
+      modern design, and excellent location.
+    </p>
+
+  </div>
+
+</div>
       </div>
       <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modelHeading={modelHeading} modelBtnLabel="Download" />
     </section>

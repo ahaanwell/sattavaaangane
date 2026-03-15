@@ -36,13 +36,40 @@ export default function OverviewSection() {
           id="overview-heading"
           className="text-3xl md:text-4xl font-extrabold text-gray-900 text-center mb-8"
         >
-          Sattva Aangane
+          Sattva Aangane – Luxurious Apartments at Budigere Cross, Bangalore
         </h2>
 
         {/* Description — keyword-rich for SEO */}
-        <div className=" mb-12 space-y-4 text-gray-700 text-base md:text-lg leading-relaxed">
+        <div className=" mb-12 space-y-4 text-gray-700 md:text-lg leading-relaxed">
           <p>
-            Sattva Aangane is a completed residential apartment project developed by the reputed real estate brand Sattva Group (formerly Salarpuria Sattva Group) in Bangalore, Karnataka. The project is designed to offer affordable yet comfortable urban living with modern amenities and practical apartment layouts.
+            <a href="http://www.sattvaaangane.co/"><strong>Sattva Aangane</strong></a> is a luxurious residential development located on Old Madras Main Road near
+Budigere Cross in <b>East Bangalore</b>. The project is designed to offer spacious homes within a
+thoughtfully planned gated community that combines comfort, convenience, and contemporary
+lifestyle features.
+          </p>
+          <p>
+            The project covers more than <b>10 acres</b> of land and has planned apartment buildings bordered
+by planted green areas and trees. The building includes four high rise towers that reach up to 
+  <b> G+35 floors</b>. It offers amazing views of the city and a peaceful place to live in a neighborhood
+that is growing.
+          </p>
+          <p>
+            The building has <b>2 BHK, 3 BHK, and 4 BHK homes</b>, so it can fit the needs of a wide range of
+customers, such as young workers, families and businessmen. Each home is designed with
+attention to detail, efficient layouts and modern architecture that supports comfortable everyday
+living.
+          </p>
+          <p>
+            Sattva Aangane will have more than 600 high end homes, as well as lifestyle perks and public
+areas that make living better overall. Building an active neighbourhood where people can live,
+work and play without leaving the safety of their gated community is the main goal of the project.
+          </p>
+          <p>
+            The project finds its home in a swiftly developing area of East Bangalore, boasting superb
+access to major IT parks, schools, medical facilities and leisure locations. This advantageous
+location presents a compelling choice for professionals traveling to nearby business districts,
+and for families in search of a well connected community. Sattva Aangane aims to promote a
+healthy lifestyle, blending contemporary apartments, modern amenities, and a prime location.
           </p>
         </div>
 

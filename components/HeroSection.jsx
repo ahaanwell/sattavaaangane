@@ -6,9 +6,9 @@ import { RiMenuLine } from "react-icons/ri";
 import LeadModal from "./LeadModal";
 
 const slides = [
-  "./images/sattvaaranya1.webp",
-  "./images/sattvaaranya2.webp",
-  "./images/sattvaaranya.webp",
+  "./images/sattvaaangane.webp",
+  "./images/sattvaaangane.webp",
+  "./images/sattvaaangane.webp",
 ];
 
 export default function HeroSection() {
@@ -74,9 +74,7 @@ export default function HeroSection() {
   
   return (
     <>
-      {/* ═══════════════════════════════════════
-          MOBILE LAYOUT  (hidden on lg+)
-      ═══════════════════════════════════════ */}
+    
       <div className="lg:hidden flex flex-col bg-gray-100 min-h-screen">
 
         {/* Image Slider */}
@@ -116,7 +114,7 @@ export default function HeroSection() {
           <p className="text-gray-800 text-xl mb-2 font-semiblod">By Sattav Group</p>
           <div className="flex items-center justify-center gap-1 font-medium text-gray-700 text-lg mb-6">
             <FaMapMarkerAlt />
-            <span>Kengeri, Mysore Road, West Bengaluru</span>
+            <span>Old Madras Main Road, Budigere Cross</span>
           </div>
 
           {/* PRE LAUNCH pill */}
@@ -126,23 +124,23 @@ export default function HeroSection() {
 
           {/* BHK pill */}
           <button className="w-full bg-primary text-white font-bold py-3 rounded-lg mb-7 tracking-widest text-sm transition-colors">
-            3 &amp; 4 BHK
+            2, 3 & 4 BHK Apartment
           </button>
 
           {/* Stats row */}
           <div className="flex gap-3 mb-6">
             <div className="flex-1 border border-gray-200 rounded-xl py-3 px-2 text-center">
               <p className="text-lg text-gray-700 mb-1">Land Area</p>
-              <p className="text-2xl font-extrabold text-gray-800">42 Acres</p>
+              <p className="text-2xl font-extrabold text-gray-800">10+ Acres</p>
             </div>
             <div className="flex-1 border border-gray-200 rounded-xl py-3 px-2 text-center">
               <p className="text-lg text-gray-700 mb-1">Total Units</p>
-              <p className="text-2xl font-extrabold text-gray-800">2400</p>
+              <p className="text-2xl font-extrabold text-gray-800">600+</p>
             </div>
           </div>
 
           {/* Price */}
-          <p className="text-2xl font-extrabold text-gray-900 mb-5">₹ 2.8 Cr. Onwards</p>
+          <p className="text-2xl font-extrabold text-gray-900 mb-5">₹ 1.2 Cr. Onwards</p>
 
           {/* Action buttons */}
           <div className="flex gap-3 mb-4">
@@ -223,26 +221,26 @@ export default function HeroSection() {
 
             <div className="flex items-center gap-2 text-white text-lg mb-6 ml-1">
               <FaMapMarkerAlt className="text-xl" />
-              <span>Kengeri, Mysore Road, West Bengaluru</span>
+              <span>Old Madras Main Road, Budigere Cross</span>
             </div>
 
             <div className="flex gap-4 mb-6">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3 text-center min-w-[120px]">
                 <p className="text-sm text-white/70 mb-1">Land Area</p>
-                <p className="text-xl font-extrabold">42 Acres</p>
+                <p className="text-xl font-extrabold">10+ Acres</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3 text-center min-w-[120px]">
                 <p className="text-sm text-white/70 mb-1">Total Units</p>
-                <p className="text-xl font-extrabold">2400</p>
+                <p className="text-xl font-extrabold">600+</p>
               </div>
             </div>
 
             <div className="mb-2">
               <span className="text-2xl xl:text-3xl font-extrabold bg-black/20 px-4 py-2 rounded-md inline-block">
-                ₹ 2.8 Cr. Onwards
+                ₹ 1.2 Cr. Onwards
               </span>
             </div>
-            <p className="text-xl font-bold mt-3 mb-7 ml-1">3 &amp; 4 BHK</p>
+            <p className="text-xl font-bold mt-3 mb-7 ml-1">2, 3 & 4 BHK Apartment</p>
 
             <div className="flex flex-wrap gap-4 mb-8">
               <button 

@@ -5,14 +5,38 @@ import { FaChevronDown } from "react-icons/fa";
 
 const faqs = [
   {
-    question: "Where is Sattav Aaranya located?",
+    question: "1. Where is Sattva Aangane located?",
     answer:
-      "Sattav Aaranya is located in Bellandur, Bangalore — one of the city's most well-connected and rapidly growing residential neighbourhoods, with direct access to Outer Ring Road and Sarjapur Road.",
+      "Sattva Aangane is on Old Madras Main Road near Budigere Cross in East Bangalore.",
+  },
+  {
+    question: "2. What sorts of units are there in the project?",
+    answer: "The project has 2 BHK, 3 BHK, and 4 BHK units."
+  },
+  {
+    question: "3. How many towers are planned at Sattva Aangane?",
+    answer: "The residential complex will have four high-rise structures."
+  },
+  {
+    question: "4. What are the starting prices for apartments?",
+    answer: "The project&#39;s units start at roughly ₹1.2 crore."
+  },
+  {
+    question: "5. How many units are available for the project?",
+    answer: "The project is projected to have about 600 residential units."
+  },
+  {
+    question: "6. What facilities are offered in the community?",
+    answer: "Residents will have access to amenities such as a clubhouse, swimming pool, gym, sports facilities, manicured gardens, and playgrounds for children."
+  },
+  {
+    question: "7. Is Sattva Aangane a viable investment opportunity?",
+    answer: "Yes, the property is situated in a fast expanding location of East Bangalore with significant development potential, making it appealing to both homeowners and investors."
   },
 ];
 
 export default function FaqSection() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -22,7 +46,7 @@ export default function FaqSection() {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="w-full bg-gray-50 py-14 px-4 border-t border-gray-100"
+      className="w-full bg-white py-14 px-4 border-t border-gray-100"
     >
       <div className="max-w-4xl mx-auto">
         <h2
@@ -51,7 +75,7 @@ export default function FaqSection() {
                 <button
                   onClick={() => toggle(index)}
                   aria-expanded={isOpen}
-                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
+                  className="w-full flex items-center cursor-pointer justify-between gap-4 px-5 py-4 text-left"
                 >
                   <span className={`text-sm md:text-base font-semibold leading-snug ${isOpen ? "text-primary" : "text-gray-800"}`}>
                     {faq.question}

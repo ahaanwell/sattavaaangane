@@ -74,11 +74,11 @@ export default function Header() {
             {/* Desktop WhatsApp */}
             <div className="hidden lg:flex">
               <Link
-                href="https://wa.me/919380660766"
+                href="https://wa.me/"
                 className="bg-primary text-white flex items-center gap-1 px-3 py-1 rounded-full font-medium hover:bg-[#ce3125] transition"
               >
                 <FaWhatsapp />
-                +919380660766
+                Whatsapp
               </Link>
             </div>
 
@@ -152,11 +152,11 @@ export default function Header() {
 
           {/* WhatsApp Button */}
           <Link
-            href="https://wa.me/919380660766"
+            href="https://wa.me/"
             className="flex justify-center items-center gap-2 bg-primary text-white py-2 rounded-full mt-6"
           >
             <FaWhatsapp />
-            +919380660766
+            Whatsapp
           </Link>
         </div>
       </div>
