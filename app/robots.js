@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.sattavaaangane.com/sitemap.xml",
+    sitemap: "https://www.sattvaaangane.co/sitemap.xml",
   };
 }

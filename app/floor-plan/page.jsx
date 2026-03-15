@@ -16,7 +16,7 @@ export const metadata = {
     "Sattva Aangane apartment design Bangalore"
   ],
 
-  metadataBase: new URL("https://www.sattavaaangane.com"),
+  metadataBase: new URL("https://www.sattvaaangane.co"),
 
   alternates: {
     canonical: "/floor-plan",
@@ -26,11 +26,11 @@ export const metadata = {
     title: "Sattva Aangane Floor Plan | Apartment Layout & Unit Plans",
     description:
       "Discover detailed floor plans and apartment layouts at Sattva Aangane Bangalore. Designed for comfort, space, and modern living.",
-    url: "https://www.sattavaaangane.com/floor-plan",
+    url: "https://www.sattvaaangane.co/floor-plan",
     siteName: "Sattva Aangane",
     images: [
       {
-        url: "https://www.sattavaaangane.com/images/floor-plan-banner.webp",
+        url: "https://www.sattvaaangane.co/images/floor-plan-banner.webp",
         width: 1200,
         height: 630,
         alt: "Sattva Aangane Floor Plan",
@@ -45,7 +45,7 @@ export const metadata = {
     title: "Sattva Aangane Floor Plan | Apartment Layout",
     description:
       "View the spacious floor plans and apartment layouts of Sattva Aangane Bangalore.",
-    images: ["https://www.sattavaaangane.com/images/floor-plan-banner.webp"],
+    images: ["https://www.sattvaaangane.co/images/floor-plan-banner.webp"],
   },
 
   robots: {

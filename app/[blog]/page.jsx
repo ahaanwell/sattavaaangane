@@ -1,41 +1,47 @@
 import BlogDetailsPage from "./BlogDetailsPage";
 
+
+async function fetchBlogDetails(slug) {
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API}/slug/${slug}`, {
+      headers: { "x-api-key": process.env.NEXT_PUBLIC_API_KEY },
+      next: { revalidate: 3600 },
+    });
+
+    if (!res.ok) return null;
+    const blogData = await res.json();
+    return blogData || null;
+  } catch (err) {
+    console.error("Fetch blog error:", err?.message);
+    return null;
+  }
+}
 export default async function Page({ params }) {
-  // Unwrap the async params
   const resolvedParams = await params;
   const { blog } = resolvedParams;
-
-  return <BlogDetailsPage blogSlug={blog} />
+  const blogData = await fetchBlogDetails(blog);
+  return <BlogDetailsPage blogData={blogData} />
 }
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const { blog } = resolvedParams;
 
-  // Fetch blog data from your API
-  const res = await fetch(`https://m2nblogcmsapi.vercel.app/api/blogs/project/sattav-aaranya/slug/${blog}`,
-    {
-      headers: {
-        "x-api-key": "sk_sattav_aaranya_97a47e4825b29953cb4889db4325272886090a07bcc1a628",
-      },
-      next: { revalidate: 3600 }, // ISR works here ✅
-    }
-  );
-  const blogData = await res.json();
+  const blogData = await fetchBlogDetails(blog)
 
   return {
-    title: blogData.metaTitle || blogData.title,
-    description: blogData.metaDescription || "",
+    title: blogData?.metaTitle || blogData?.title,
+    description: blogData?.metaDescription || "",
     openGraph: {
-      title: blogData.metaTitle || blogData.title,
-      description: blogData.metaDescription || "",
-      images: blogData.featuredImage
+      title: blogData?.metaTitle || blogData?.title,
+      description: blogData?.metaDescription || "",
+      images: blogData?.featuredImage
         ? [
             {
-              url: blogData.featuredImage.url,
+              url: blogData?.featuredImage.url,
               width: 1200,
               height: 630,
-              alt: blogData.title,
+              alt: blogData?.title,
             },
           ]
         : [],
@@ -43,9 +49,9 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: blogData.metaTitle || blogData.title,
-      description: blogData.metaDescription || "",
-      images: blogData.featuredImage ? [blogData.featuredImage.url] : [],
+      title: blogData?.metaTitle || blogData?.title,
+      description: blogData?.metaDescription || "",
+      images: blogData?.featuredImage ? [blogData?.featuredImage?.url] : [],
     },
   };
 }

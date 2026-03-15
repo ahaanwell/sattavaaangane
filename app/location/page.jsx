@@ -17,7 +17,7 @@ export const metadata = {
     "Sattva Aangane connectivity Bangalore"
   ],
 
-  metadataBase: new URL("https://www.sattavaaangane.com"),
+  metadataBase: new URL("https://www.sattvaaangane.co"),
 
   alternates: {
     canonical: "/location",
@@ -27,11 +27,11 @@ export const metadata = {
     title: "Sattva Aangane Location | Connectivity & Nearby Landmarks",
     description:
       "Discover the strategic location of Sattva Aangane Bangalore with excellent connectivity to IT parks, schools, hospitals, and major roads.",
-    url: "https://www.sattavaaangane.com/location",
+    url: "https://www.sattvaaangane.co/location",
     siteName: "Sattva Aangane",
     images: [
       {
-        url: "https://www.sattavaaangane.com/images/location-banner.webp",
+        url: "https://www.sattvaaangane.co/images/location-banner.webp",
         width: 1200,
         height: 630,
         alt: "Sattva Aangane Location Map",
@@ -46,7 +46,7 @@ export const metadata = {
     title: "Sattva Aangane Location | Connectivity & Map",
     description:
       "View the location and connectivity of Sattva Aangane Bangalore with nearby landmarks and transport access.",
-    images: ["https://www.sattavaaangane.com/images/location-banner.webp"],
+    images: ["https://www.sattvaaangane.co/images/location-banner.webp"],
   },
 
   robots: {

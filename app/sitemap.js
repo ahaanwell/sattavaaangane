@@ -1,15 +1,14 @@
 export default async function sitemap() {
-  const baseUrl = "https://www.sattavaaangane.com";
+  const baseUrl = "https://www.sattvaaangane.co";
 
   let blogs = [];
 
   try {
     const res = await fetch(
-      "https://m2nblogcmsapi.vercel.app/api/blogs/project/sattav-aaranya",
+      process.env.NEXT_PUBLIC_API,
       {
         headers: {
-          "x-api-key":
-            "sk_sattav_aaranya_97a47e4825b29953cb4889db4325272886090a07bcc1a628",
+          "x-api-key": process.env.NEXT_PUBLIC_API_KEY,
         },
         next: { revalidate: 3600 }, // ✅ allow static generation with revalidation
       }

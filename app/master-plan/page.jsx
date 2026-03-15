@@ -15,7 +15,7 @@ export const metadata = {
     "Sattva Aangane residential layout Bangalore"
   ],
 
-  metadataBase: new URL("https://www.sattavaaangane.com"),
+  metadataBase: new URL("https://www.sattvaaangane.co"),
 
   alternates: {
     canonical: "/master-plan",
@@ -25,11 +25,11 @@ export const metadata = {
     title: "Sattva Aangane Master Plan | Project Layout & Township Plan",
     description:
       "View the detailed master plan of Sattva Aangane Bangalore featuring residential towers, open green areas, modern amenities, and smart infrastructure.",
-    url: "https://www.sattavaaangane.com/master-plan",
+    url: "https://www.sattvaaangane.co/master-plan",
     siteName: "Sattva Aangane",
     images: [
       {
-        url: "https://www.sattavaaangane.com/images/master-plan-banner.webp",
+        url: "https://www.sattvaaangane.co/images/master-plan-banner.webp",
         width: 1200,
         height: 630,
         alt: "Sattva Aangane Master Plan",
@@ -44,7 +44,7 @@ export const metadata = {
     title: "Sattva Aangane Master Plan | Project Layout",
     description:
       "Discover the master layout plan of Sattva Aangane Bangalore with modern amenities and well-planned spaces.",
-    images: ["https://www.sattavaaangane.com/images/master-plan-banner.webp"],
+    images: ["https://www.sattvaaangane.co/images/master-plan-banner.webp"],
   },
 
   robots: {

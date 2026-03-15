@@ -16,7 +16,7 @@ export const metadata = {
     "Sattva Aangane apartment price Bangalore"
   ],
 
-  metadataBase: new URL("https://www.sattavaaangane.com"),
+  metadataBase: new URL("https://www.sattvaaangane.co"),
 
   alternates: {
     canonical: "/price",
@@ -26,11 +26,11 @@ export const metadata = {
     title: "Sattva Aangane Price | Apartment Price List & Cost Details",
     description:
       "Discover the latest Sattva Aangane apartment prices in Bangalore. Get complete price details, payment plans, and unit configurations.",
-    url: "https://www.sattavaaangane.com/price",
+    url: "https://www.sattvaaangane.co/price",
     siteName: "Sattva Aangane",
     images: [
       {
-        url: "https://www.sattavaaangane.com/images/price-banner.webp",
+        url: "https://www.sattvaaangane.co/images/price-banner.webp",
         width: 1200,
         height: 630,
         alt: "Sattva Aangane Price Details",
@@ -45,7 +45,7 @@ export const metadata = {
     title: "Sattva Aangane Price | Apartment Price List",
     description:
       "View the latest Sattva Aangane apartment price list and payment plans in Bangalore.",
-    images: ["https://www.sattavaaangane.com/images/price-banner.webp"],
+    images: ["https://www.sattvaaangane.co/images/price-banner.webp"],
   },
 
   robots: {

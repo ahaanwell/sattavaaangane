@@ -1,15 +1,11 @@
 import Link from "next/link";
 async function getBlogs() {
-  const res = await fetch(
-    "https://m2nblogcmsapi.vercel.app/api/blogs/project/sattav-aaranya",
-    {
-      headers: {
-        "x-api-key":
-          "sk_sattav_aaranya_97a47e4825b29953cb4889db4325272886090a07bcc1a628",
-      },
-      cache: "no-store",
-    }
-  );
+  const res = await fetch(process.env.NEXT_PUBLIC_API, {
+    headers: { "x-api-key": process.env.NEXT_PUBLIC_API_KEY },
+    cache: "no-store",
+  });
+
+  if (!res.ok) return [];
 
   const data = await res.json();
   return data.blogs || [];

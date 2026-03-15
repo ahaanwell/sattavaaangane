@@ -16,7 +16,7 @@ export const metadata = {
     "Sattva Aangane apartment amenities Bangalore"
   ],
 
-  metadataBase: new URL("https://www.sattavaaangane.com"),
+  metadataBase: new URL("https://www.sattvaaangane.co"),
 
   alternates: {
     canonical: "/amenities",
@@ -26,11 +26,11 @@ export const metadata = {
     title: "Sattva Aangane Amenities | Modern Lifestyle & Premium Facilities",
     description:
       "Explore the premium amenities at Sattva Aangane Bangalore including clubhouse, swimming pool, gym, landscaped gardens, and more for a luxurious lifestyle.",
-    url: "https://www.sattavaaangane.com/amenities",
+    url: "https://www.sattvaaangane.co/amenities",
     siteName: "Sattva Aangane",
     images: [
       {
-        url: "https://www.sattavaaangane.com/images/amenities-banner.webp",
+        url: "https://www.sattvaaangane.co/images/amenities-banner.webp",
         width: 1200,
         height: 630,
         alt: "Sattva Aangane Amenities",
@@ -45,7 +45,7 @@ export const metadata = {
     title: "Sattva Aangane Amenities | Premium Lifestyle Facilities",
     description:
       "View the premium amenities and lifestyle facilities available at Sattva Aangane Bangalore.",
-    images: ["https://www.sattavaaangane.com/images/sattvaaranya.webp"],
+    images: ["https://www.sattvaaangane.co/images/sattvaaangane.webp"],
   },
 
   robots: {
