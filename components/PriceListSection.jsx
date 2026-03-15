@@ -140,14 +140,14 @@ export default function PriceListSection() {
     </p>
 
     <p>
-      The project will be an advanced private residential tower located at Budigere Cross on Old
-      Madras Main Road. With four towers that go up to <b>G+35 floors</b>, the flats have great views of
+      The project will be an advanced private residential tower located at <b>Budigere Cross on Old
+      Madras Main Road</b>. With four towers that go up to <b>G+35 floors</b>, the flats have great views of
       the city and planted green areas. The apartments are made so that they can fit both small
       families and bigger families who want more space to live.
     </p>
 
     <p>
-      Apartments at Sattva Aangane start at about <b>₹ 1.2 Crore</b>, which makes it a good choice for
+      Apartments at Sattva Aangane start at about <a href="https://www.sattvaaangane.co/price"><b>₹ 1.2 Crore</b></a>, which makes it a good choice for
       people in East Bangalore who want to buy modern houses. Prices may change based on
       things like the size of the flat, its floor level, its location in the tower, and the way it faces. The
       project offers a range of unit sizes so that buyers can find homes that meet their needs for
@@ -155,10 +155,10 @@ export default function PriceListSection() {
     </p>
 
     <p>
-      The 2 BHK homes are great for workers and small families, while the <b>3 BHK flats</b> have more
-      room for families to live comfortably. The 4 BHK apartments are the largest in the building and
-      are made for people who want bigger luxury homes. These apartment choices give buyers the
-      freedom to choose houses that fit their price and way of life. Sattva Aangane aims to provide a
+      The <b>2 BHK homes</b> are great for workers and small families, while the <b>3 BHK flats</b> have more
+      room for families to live comfortably. The <b>4 BHK apartments</b> are the largest in the building and
+      are made for people who want bigger <b>luxury homes</b>. These apartment choices give buyers the
+      freedom to choose houses that fit their price and way of life. <b>Sattva Aangane</b> aims to provide a
       peaceful and premium living experience in East Bangalore through its large floor plans,
       modern design, and excellent location.
     </p>

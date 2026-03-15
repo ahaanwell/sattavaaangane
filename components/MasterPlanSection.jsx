@@ -27,9 +27,9 @@ export default function MasterPlanSection() {
         <div className="w-full h-px bg-gray-200 mb-5" />
         <div className="text-gray-800 mb-5">
           <p>
-            <b>Sattva Aangane's master</b> plan calls for building a modern neighborhood with tall buildings,
+            <a href="https://www.sattvaaangane.co/master-plan"><b>Sattva Aangane's master</b></a> plan calls for building a modern neighborhood with tall buildings,
 green parks, and well-thought-out services for everyday life. The development covers more than
-<b>10 acres</b> at Budigere Cross on Old Madras Main Road. Its goal is to provide an easy city life
+<b> 10 acres</b> at Budigere Cross on <b>Old Madras Main Road</b>. Its goal is to provide an easy city life
 while keeping green spaces and open spaces on the land.
           </p>
         </div>
@@ -124,7 +124,7 @@ while keeping green spaces and open spaces on the land.
         Apartment Configurations
       </h3>
       <p>
-        The building has 2 BHK, 3 BHK, and 4 BHK flats, each intended to meet the needs of a different
+        The building has <b>2 BHK, 3 BHK, and 4 BHK flats</b>, each intended to meet the needs of a different
         size family and way of life.
       </p>
     </div>

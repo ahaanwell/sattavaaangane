@@ -23,7 +23,7 @@ export default function MobileBottomBar() {
 
         {/* WhatsApp */}
         <Link
-          href="https://wa.me/+918951475147?text=Hi!%20I%27m%20Interested%20In%20Adarsh%20Lake%20View%20Please%20Share%20Details."
+          href="https://wa.me/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-1 py-2"

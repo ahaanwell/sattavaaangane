@@ -50,7 +50,7 @@ export default function FloorPlanSection() {
         <div className="w-full h-px bg-gray-200 mb-5" />
         <div className="text-gray-800 space-x-6 pb-5">
           <p>
-            The floor plans of Sattva Aangane were carefully thought out to be as useful and comfortable as
+            The <a href="https://www.sattvaaangane.co/floor-plan">floor plans of Sattva Aangane</a> were carefully thought out to be as useful and comfortable as
 possible.
           </p>
         </div>
@@ -110,7 +110,7 @@ possible.
       <h3 className="text-xl font-semibold mb-4">2 BHK Apartments</h3>
 
       <p className="mb-4">
-        The 2 BHK apartments are good for young couples and small families. Usually, these houses
+        The <b>2 BHK apartments</b> are good for young couples and small families. Usually, these houses
         have
       </p>
 
@@ -132,7 +132,7 @@ possible.
       <h3 className="text-xl font-semibold mb-4">3 BHK Apartments</h3>
 
       <p className="mb-4">
-        The 3 BHK homes have more space and are made for families who need more room for daily
+        The <b>3 BHK homes</b> have more space and are made for families who need more room for daily
         tasks. Some features are
       </p>
 
@@ -154,7 +154,7 @@ possible.
       <h3 className="text-xl font-semibold mb-4">4 BHK Apartments</h3>
 
       <p className="mb-4">
-        The project's most luxurious units are the 4 BHK homes, which are made for bigger families.
+        The project's most luxurious units are the <b>4 BHK homes</b>, which are made for bigger families.
         Key features include
       </p>
 

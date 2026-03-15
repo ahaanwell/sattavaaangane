@@ -3,7 +3,7 @@ export default function MoreAboutProjectSection() {
   return (
     <section
       id="seo-content"
-      className="w-full bg-white pt-14 px-3 md:px-0"
+      className="w-full bg-white pt-6 px-3 md:px-0"
     >
       <div className="max-w-5xl mx-auto space-y-6">
 
