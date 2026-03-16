@@ -3,7 +3,6 @@
 import {
   FaBuilding,
   FaRupeeSign,
-  FaThLarge,
   FaVectorSquare,
   FaDoorOpen,
   FaLayerGroup,
@@ -85,14 +84,12 @@ export default function ProjectHighlights() {
       className="w-full bg-white pt-8 px-4 md:px-0"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Heading */}
         <h2
           id="highlights-heading"
           className="text-3xl font-semibold text-gray-900 text-center mb-5"
         >
           About Sattva Aangane
         </h2>
-        {/* Grid */}
         <div
           className="grid grid-cols-2 lg:grid-cols-4 gap-4"
           aria-label="Sattva Aangane project highlights"
@@ -102,12 +99,10 @@ export default function ProjectHighlights() {
               key={index}
               className="bg-gray-50 rounded-2xl px-1 sm:px-5 py-3 sm:py-5 flex items-start gap-1 sm:gap-4 hover:shadow-sm transition-shadow duration-300"
             >
-              {/* Icon */}
               <div aria-hidden="true" className="mt-1 flex-shrink-0">
                 {item.icon}
               </div>
 
-              {/* Text */}
               <div>
                 <p className="text-sm text-gray-500 leading-tight mb-1">
                   {item.label}
@@ -121,7 +116,6 @@ export default function ProjectHighlights() {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          {/* Description — keyword-rich for SEO */}
           <h2
             id="overview-heading"
             className="text-2xl font-semibold text-gray-900 text-center my-8"
@@ -134,7 +128,7 @@ export default function ProjectHighlights() {
               <a href="http://www.sattvaaangane.co/">
                 <strong>Sattva Aangane</strong>
               </a>{" "}
-              is a luxurious residential development located on Old Madras Main
+              is a luxurious residential development project by <a href="https://sattvagroup.com/" rel="nofollow"><b>Sattva Group</b></a> located on Old Madras Main
               Road near Budigere Cross in <b>East Bangalore</b>. The project is
               designed to offer spacious homes within a thoughtfully planned
               gated community that combines comfort, convenience, and

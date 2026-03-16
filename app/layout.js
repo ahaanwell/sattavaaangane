@@ -2,8 +2,8 @@ import { Poppins, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BrochureDownload from "@/components/BrochureDownload";
 import MobileBottomBar from "@/components/MobileBottomBar";
+import BrochureWrapper from "@/components/BrochureWrapper";
 
 const poppins = Poppins({
   variable: "--font-sans",
@@ -218,7 +218,7 @@ export default function RootLayout({ children }) {
         className={`${poppins.variable} ${robotoMono.variable} antialiased`}
       >
         <Header />
-        <BrochureDownload topPosition={"top-80"} frmName={"Broucher"} />
+        <BrochureWrapper/>
         {children}
         <Footer />
         <MobileBottomBar />

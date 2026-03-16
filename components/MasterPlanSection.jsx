@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import { useState } from "react";
-import { FaDownload, FaPhone } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 import LeadModal from "./LeadModal";
 
 export default function MasterPlanSection() {
@@ -15,7 +15,6 @@ export default function MasterPlanSection() {
       className="w-full bg-white pt-14 px-4 md:px-0"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Heading */}
         <h2
           id="master-plan-heading"
           className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
@@ -23,7 +22,6 @@ export default function MasterPlanSection() {
           Master Plan
         </h2>
 
-        {/* Divider */}
         <div className="w-full h-px bg-gray-200 mb-5" />
         <div className="text-gray-800 mb-5">
           <p>
@@ -46,7 +44,6 @@ while keeping green spaces and open spaces on the land.
               loading="lazy"
             />
 
-            {/* Hover Overlay (NOW INSIDE relative parent) */}
             <div
               className={`absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300 ${
                 isHover ? "opacity-100" : "opacity-0"
@@ -65,7 +62,6 @@ while keeping green spaces and open spaces on the land.
             </div>
           </div>
 
-          {/* Label Bar */}
           <div className="bg-primary text-white text-center font-semibold text-lg md:text-xl py-4 px-4">
             Master Plan
           </div>

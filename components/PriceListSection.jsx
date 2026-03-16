@@ -22,7 +22,6 @@ export default function PriceListSection() {
     >
       <div className="max-w-5xl mx-auto">
 
-        {/* Heading */}
         <h2
           id="price-list-heading"
           className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
@@ -30,10 +29,8 @@ export default function PriceListSection() {
           Configuration and Price
         </h2>
 
-        {/* Divider */}
         <div className="w-full h-px bg-gray-200 mb-5" />
 
-        {/* Content: Table + Floor Plan */}
         <div className="text-gray-800 space-x-6 pb-5">
           <p>
           The project offers multiple apartment configurations designed to meet the needs of different homebuyers.
@@ -41,8 +38,6 @@ export default function PriceListSection() {
         </div>
         <div className="flex flex-col lg:flex-row gap-0 ">
 
-          {/* Left — Price Table */}
-          {/* Left — Price Table (Desktop) */}
 <div className="flex-1 overflow-x-auto hidden md:block">
   <table
     className="w-full text-sm md:text-base"
@@ -72,30 +67,24 @@ export default function PriceListSection() {
     </tbody>
   </table>
 </div>
-
-{/* Mobile Card Layout */}
 <div className="md:hidden flex flex-col gap-5 px-2">
   {priceData.map((row, i) => (
     <div
       key={i}
       className="bg-gray-100 border border-gray-300 rounded-md p-6 text-center shadow-sm"
     >
-      {/* Unit Type */}
       <h3 className="text-xl font-semibold text-gray-900 mb-2">
         {row.type}
       </h3>
 
-      {/* Size */}
       <p className="text-sm text-gray-700 mb-2">
         {row.size}
       </p>
 
-      {/* Price */}
       <p className="text-lg font-bold text-black mb-4">
         {row.price}
       </p>
 
-      {/* Button */}
       <button
         onClick={() => {
           SetModelHeading(`${row.type} - Price Breakup`);

@@ -23,7 +23,6 @@ export default function AmenitiesSection() {
       className="w-full bg-white pt-14 px-4 md:px-0"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Heading */}
         <h2
           id="amenities-heading"
           className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
@@ -31,7 +30,6 @@ export default function AmenitiesSection() {
           Amenities at Sattva Aangane
         </h2>
 
-        {/* Divider */}
         <div className="w-full h-px bg-gray-200 mb-5" />
 
       <div className="space-y-10 text-gray-800 mb-5">
@@ -136,7 +134,6 @@ export default function AmenitiesSection() {
   </div>
 
 
-        {/* Grid */}
         <ul
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 lg:gap-4"
           aria-label="Sattav Aaranya"
@@ -146,7 +143,6 @@ export default function AmenitiesSection() {
               key={item.id}
               className="flex flex-col items-center justify-between w-full h-[150px] lg:h-[180px] shadow-[0_4px_10px_rgba(0,0,0,0.15)] p-3 rounded-xl hover:border hover:border-gray-300 hover:shadow-md transition-all duration-300 bg-white"
             >
-              {/* Image wrapper */}
               <div className="w-full flex-1 flex items-center justify-center p-3 h-[60%]">
                 <img
                   src={item.image}
@@ -157,7 +153,6 @@ export default function AmenitiesSection() {
                 />
               </div>
 
-              {/* Name */}
               <p className="text-center text-sm text-gray-700 font-light leading-tight pb-1">
                 {item.name}
               </p>

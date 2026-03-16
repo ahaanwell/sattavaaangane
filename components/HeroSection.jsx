@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { FaPhone, FaDownload, FaMapMarkerAlt } from "react-icons/fa";
-import { RiMenuLine } from "react-icons/ri";
 import LeadModal from "./LeadModal";
 
 const slides = [
@@ -36,6 +35,15 @@ export default function HeroSection() {
     setLeadData((prev) => ({ ...prev, [name]: value }));
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsModalOpen(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -45,14 +53,13 @@ export default function HeroSection() {
     const data = {
       name,
       email,
-      number,
+      phone:number,
       country_code: countryCode,
       company_email: "info@searchmyspace.in",
       project_name: "Sattva Aangane",
     };
-
     try {
-      const res = await fetch("https://smtp-server-sepia.vercel.app/send-email", {
+      const res = await fetch("https://smtpwithexcel.vercel.app/send-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -77,7 +84,6 @@ export default function HeroSection() {
     
       <div className="lg:hidden flex flex-col bg-gray-100 min-h-screen">
 
-        {/* Image Slider */}
         <div className="relative w-full h-[260px] overflow-hidden">
           {slides.map((src, i) => (
             <div
@@ -89,7 +95,6 @@ export default function HeroSection() {
               }}
             />
           ))}
-          {/* Dots */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
             {slides.map((_, i) => (
               <button
@@ -103,12 +108,10 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Booking Open Banner */}
         <div className="bg-primary text-white text-center font-semibold py-2 text-sm tracking-wider">
           Booking Open
         </div>
 
-        {/* Property Details Card */}
         <div className="bg-white px-5 pt-7 pb-5 text-center">
           <h1 className="text-3xl font-extrabold text-gray-900 mb-1">Sattva Aangane</h1>
           <p className="text-gray-800 text-xl mb-2 font-semiblod">By Sattav Group</p>
@@ -117,17 +120,14 @@ export default function HeroSection() {
             <span>Old Madras Main Road, Budigere Cross</span>
           </div>
 
-          {/* PRE LAUNCH pill */}
           <button className="w-full bg-primary text-white font-bold py-3 rounded-lg mb-3 tracking-widest text-sm transition-colors">
             PRE LAUNCH
           </button>
 
-          {/* BHK pill */}
           <button className="w-full bg-primary text-white font-bold py-3 rounded-lg mb-7 tracking-widest text-sm transition-colors">
             2, 3 & 4 BHK Apartment
           </button>
 
-          {/* Stats row */}
           <div className="flex gap-3 mb-6">
             <div className="flex-1 border border-gray-200 rounded-xl py-3 px-2 text-center">
               <p className="text-lg text-gray-700 mb-1">Land Area</p>
@@ -139,10 +139,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Price */}
           <p className="text-2xl font-extrabold text-gray-900 mb-5">₹ 1.2 Cr. Onwards</p>
 
-          {/* Action buttons */}
           <div className="flex gap-3 mb-4">
             <button 
             onClick={()=>{
@@ -172,13 +170,8 @@ export default function HeroSection() {
           </p>
         </div>
       </div>
-
-      {/* ═══════════════════════════════════════
-          DESKTOP LAYOUT  (hidden below lg)
-      ═══════════════════════════════════════ */}
       <section className="hidden lg:flex relative w-full h-[90vh] items-center overflow-hidden">
 
-        {/* Background Slides */}
         <div className="absolute inset-0 w-full h-full">
           {slides.map((src, i) => (
             <div
@@ -192,10 +185,8 @@ export default function HeroSection() {
           ))}
         </div>
 
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/55" />
 
-        {/* Carousel Dots */}
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
           {slides.map((_, i) => (
             <button
@@ -208,10 +199,8 @@ export default function HeroSection() {
           ))}
         </div>
 
-        {/* Content */}
         <div className="relative z-10 w-full max-w-5xl mx-auto py-12 flex flex-row items-center justify-between gap-10">
 
-          {/* Left */}
           <div className="flex-1 text-white">
             <div className="inline-block bg-black/20 px-6 py-3 rounded-md mb-5">
               <div className="text-2xl xl:text-3xl font-extrabold tracking-wide">
@@ -271,7 +260,6 @@ export default function HeroSection() {
             </p>
           </div>
 
-          {/* Right — Form */}
           <div className="w-full lg:w-[400px] bg-white rounded-2xl shadow-2xl p-8 flex-shrink-0">
             <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">Book Site Visit</h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -282,14 +270,14 @@ export default function HeroSection() {
                   onChange={handleChange}
                   required
                   placeholder="Name"
-                className="w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                className="w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ce3125] text-sm"
               />
               <div className="flex gap-2">
                 <select
                   name="countryCode"
                   value={leadData.countryCode}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded-xl px-3 py-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm bg-white"
+                  className="border border-gray-300 rounded-xl px-3 py-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#ce3125] text-sm bg-white"
                 >
                   <option value="+91">+91</option>
                   <option value="+1">+1</option>
@@ -303,7 +291,7 @@ export default function HeroSection() {
                   value={leadData.number}
                   onChange={handleChange}
                   required
-                  className="flex-1 border border-gray-300 rounded-xl px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                  className="flex-1 border border-gray-300 rounded-xl px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ce3125] text-sm"
                 />
               </div>
               <input
@@ -313,12 +301,12 @@ export default function HeroSection() {
                 value={leadData.email}
                   onChange={handleChange}
                   required
-                className="w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                className="w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ce3125] text-sm"
               />
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-primary cursor-pointer hover:bg-blue-800 text-white font-bold py-3.5 rounded-xl transition-colors text-base"
+                className="w-full bg-primary cursor-pointer hover:bg-primary text-white font-bold py-3.5 rounded-xl transition-colors text-base"
               >
                 {loading ? "Booking..." : "Book Now"}
               </button>
@@ -326,7 +314,7 @@ export default function HeroSection() {
                 <input
                   type="checkbox"
                   
-                  className="mt-0.5 w-4 h-4 border-gray-300 rounded accent-blue-700 flex-shrink-0"
+                  className="mt-0.5 w-4 h-4 border-gray-300 rounded accent-[#ce3125] flex-shrink-0"
                 />
                 <span className="text-xs text-gray-500 leading-relaxed">
                   I give my consent for the privacy policy to apply to the processing of the provided data.

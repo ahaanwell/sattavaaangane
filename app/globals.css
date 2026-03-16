@@ -42,9 +42,23 @@ body {
   color: #ce3125;
 }
 
-/* 003082 */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-/* globals.css */
+.btn-gradient-animation {
+  background: linear-gradient(270deg, #ce3125, #0d00c2);
+  background-size: 400% 400%;
+  animation: gradientMove 4s ease infinite;
+}
 
 .blog-content h1 {
   font-size: 2rem;
@@ -152,7 +166,6 @@ body {
   margin: 2rem 0;
 }
 
-/* Text alignment */
 .blog-content [style*="text-align: center"] { text-align: center; }
 .blog-content [style*="text-align: right"]  { text-align: right; }
 .blog-content [style*="text-align: left"]   { text-align: left; }

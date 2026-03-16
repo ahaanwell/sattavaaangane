@@ -18,7 +18,6 @@ export default function LeadModal({
     countryCode: "+91(IND)",
   });
 
-  // Close on ESC
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === "Escape") onClose();
@@ -27,7 +26,6 @@ export default function LeadModal({
     return () => window.removeEventListener("keydown", handleEsc);
   }, [onClose]);
 
-  // Lock scroll
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -55,11 +53,10 @@ export default function LeadModal({
       email,
       phone: number,
       country_code: countryCode,
-      company_email: "ahaanwell@gmail.com",
+      company_email: "info@searchmyspace.in",
       project_name: "Sattva Aangane",
     };
 
-    console.log("data", data);
     try {
       const res = await fetch(
         "https://smtpwithexcel.vercel.app/send-lead",
@@ -95,19 +92,15 @@ export default function LeadModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center px-3 md:px-4">
-      {/* Backdrop */}
       <div
         className="absolute  inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"
         onClick={onClose}
       />
-
-      {/* Modal */}
       <div
         className="relative z-10 w-full max-w-lg bg-white rounded-xl shadow-2xl 
         transform transition-all duration-300 ease-out
         animate-[fadeIn_0.3s_ease-out]"
       >
-        {/* Header */}
         <div className="bg-primary px-6 py-4 flex items-center justify-between rounded-t-xl">
           <h2 className="text-white text-lg md:text-xl font-semibold text-center flex-1">
             {modelHeading || "Enquire Now For More Details"}
@@ -121,10 +114,8 @@ export default function LeadModal({
           </button>
         </div>
 
-        {/* Body */}
         <div className="flex flex-col md:flex-row">
 
-          {/* Left Icons */}
           <div className="hidden md:flex flex-col items-center justify-center gap-6 px-5 py-6 border-r border-gray-100">
             <div className="text-center">
               <img
@@ -160,11 +151,9 @@ export default function LeadModal({
             </div>
           </div>
 
-          {/* Form */}
           <div className="flex-1 px-6 py-6">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
 
-              {/* Name */}
               <input
                 type="text"
                 name="name"
@@ -175,7 +164,6 @@ export default function LeadModal({
                 className="border-b text-gray-900 border-gray-300 focus:border-primary outline-none pb-2 text-sm"
               />
 
-              {/* Phone */}
               <div className="flex gap-2 text-gray-900 border-b border-gray-300 focus-within:border-primary pb-2">
                 <select
                   name="countryCode"
@@ -200,7 +188,6 @@ export default function LeadModal({
                 />
               </div>
 
-              {/* Email */}
               <input
                 type="email"
                 name="email"
@@ -210,7 +197,6 @@ export default function LeadModal({
                 className="border-b text-gray-900 border-gray-300 focus:border-primary outline-none pb-2 text-sm"
               />
 
-              {/* Submit */}
               <button
                 type="submit"
                 disabled={loading}
@@ -221,14 +207,13 @@ export default function LeadModal({
     ? modelBtnLabel === "Download"
       ? "Downloading..."
       : "Submitting..."
-    : `${modelBtnLabel} Now`
+    : `${modelBtnLabel || "Submit"} Now`
 }
               </button>
 
-              {/* WhatsApp & Call */}
               <div className="flex gap-3">
                 <Link
-                  href="https://wa.me/919380660766"
+                  href="https://wa.me"
                   target="_blank"
                   className="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2 rounded-md text-sm"
                 >
@@ -237,7 +222,7 @@ export default function LeadModal({
                 </Link>
 
                 <Link
-                  href="tel:+919380660766"
+                  href="tel:"
                   className="flex-1 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md text-sm"
                 >
                   <FaPhone />

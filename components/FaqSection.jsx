@@ -59,7 +59,6 @@ export default function FaqSection() {
           Everything you need to know about Sattav Aaranya, Bellandur, Bangalore.
         </p>
 
-        {/* Accordion */}
         <div className="space-y-3" role="list">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
@@ -71,7 +70,6 @@ export default function FaqSection() {
                   isOpen ? "border-blue-300 shadow-sm" : "border-gray-200"
                 }`}
               >
-                {/* Question */}
                 <button
                   onClick={() => toggle(index)}
                   aria-expanded={isOpen}
@@ -87,7 +85,6 @@ export default function FaqSection() {
                   />
                 </button>
 
-                {/* Answer */}
                 <div
                   className={`transition-all duration-300 ease-in-out ${
                     isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"

@@ -1,5 +1,4 @@
 "use client";
-import LoadingSpinner from "@/components/LoadingSpinner";
 
 const toLocalImage = (cloudinaryUrl) => {
 
@@ -21,7 +20,6 @@ export default function BlogDetailsPage({ blogData }) {
       className="rounded"
       src={toLocalImage(blogData?.featuredImage?.url)} alt={blogData?.title} />
 
-      {/* This renders the HTML content from the editor */}
       <div
         className="blog-content mt-5 text-gray-700"
         dangerouslySetInnerHTML={{ __html: blogData?.content }}

@@ -13,7 +13,6 @@ async function getBlogs() {
 
 export default async function BlogSection() {
 
-  // const { blogs } = useBlogs();
 const blogs = await getBlogs();
   if (!blogs || blogs.length === 0) return null;
 

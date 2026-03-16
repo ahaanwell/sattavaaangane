@@ -9,13 +9,13 @@ const floorPlans = [
   {
     id: 1,
     label: "2 BHK Floor Plan",
-    image: "./images/3-bhk-floorplan.webp",
+    image: "./images/2-bhk-floorplan.webp",
     alt: "2 BHK Floor Plan",
   },
   {
     id: 2,
     label: "3 BHK Floor Plan",
-    image: "./images/3.5-bhk-floorplan.webp",
+    image: "./images/3-bhk-floorplan.webp",
     alt: "3 BHK Floor Plan",
   },
   {
@@ -38,7 +38,6 @@ export default function FloorPlanSection() {
     >
       <div className="max-w-5xl mx-auto">
 
-        {/* Heading */}
         <h2
           id="floor-plan-heading"
           className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
@@ -46,7 +45,6 @@ export default function FloorPlanSection() {
           Floor Plan
         </h2>
 
-        {/* Divider */}
         <div className="w-full h-px bg-gray-200 mb-5" />
         <div className="text-gray-800 space-x-6 pb-5">
           <p>
@@ -54,7 +52,6 @@ export default function FloorPlanSection() {
 possible.
           </p>
         </div>
-        {/* Cards Grid */}
         <ul
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           aria-label="Sattva Aangane floor plans"
@@ -66,7 +63,6 @@ possible.
               onMouseEnter={() => setHoveredId(plan.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              {/* Image container */}
               <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-100">
                 <img
                   src={plan.image}
@@ -75,7 +71,6 @@ possible.
                   loading="lazy"
                 />
 
-                {/* Hover Overlay */}
                 <div
                   className={`absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300 ${
                     hoveredId === plan.id ? "opacity-100" : "opacity-0"
@@ -95,7 +90,6 @@ possible.
                 </div>
               </div>
 
-              {/* Label Bar */}
               <div className="bg-primary text-white text-center font-semibold text-base md:text-lg py-3 px-4">
                 {plan.label}
               </div>

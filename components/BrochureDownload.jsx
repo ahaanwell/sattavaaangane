@@ -3,8 +3,15 @@
 import { useState, useEffect } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
-export default function BrochureDownload({topPosition, frmName}) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function BrochureDownload({
+  topPosition,
+  frmName,
+  id,
+  openPanel,
+  setOpenPanel,
+}) {
+  const isOpen = openPanel === id;
+
   const [loading, setLoading] = useState(false);
   const [leadData, setLeadData] = useState({
     name: "",
@@ -14,12 +21,12 @@ export default function BrochureDownload({topPosition, frmName}) {
 
   useEffect(() => {
     const handleEsc = (e) => {
-      if (e.key === "Escape") setIsOpen(false);
+      if (e.key === "Escape") setOpenPanel(null);
     };
+
     window.addEventListener("keydown", handleEsc);
     return () => window.removeEventListener("keydown", handleEsc);
-  }, []);
-
+  }, [setOpenPanel]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,21 +42,24 @@ export default function BrochureDownload({topPosition, frmName}) {
     const data = {
       name,
       email,
-      number,
+      phone:number,
       company_email: "info@searchmyspace.in",
       project_name: "Sattva Aangane",
     };
 
     try {
-      const res = await fetch("https://smtp-server-sepia.vercel.app/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+      const res = await fetch(
+        "https://smtpwithexcel.vercel.app/send-lead",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        }
+      );
 
       if (res.ok) {
         alert("Enquiry Submitted Successfully");
-        setLeadData({ name: "", email: "", number: ""});
+        setLeadData({ name: "", email: "", number: "" });
       } else {
         alert("Something went wrong ❌");
       }
@@ -60,27 +70,33 @@ export default function BrochureDownload({topPosition, frmName}) {
     setLoading(false);
   };
 
+  const togglePanel = () => {
+    if (isOpen) {
+      setOpenPanel(null);
+    } else {
+      setOpenPanel(id);
+    }
+  };
 
   return (
     <>
-      {/* Backdrop */}
       {isOpen && (
         <div
           className="fixed inset-0 z-40 bg-black/40"
-          onClick={() => setIsOpen(false)}
+          onClick={() => setOpenPanel(null)}
           aria-hidden="true"
         />
       )}
 
-      {/* Wrapper — slides from left, tab always attached on the right side of panel */}
       <div
         className={`fixed left-0 ${topPosition} -translate-y-1/2 z-50 flex flex-row items-stretch transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-[220px]"
         }`}
       >
-        {/* ── Panel ── */}
         <div className="bg-primary rounded shadow-2xl p-3 w-[220px] flex flex-col gap-3">
-          <h3 className="text-white text-lg font-bold">Download {frmName}</h3>
+          <h3 className="text-white text-md text-center font-bold">
+            Download {frmName}
+          </h3>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-3">
             <input
@@ -90,8 +106,9 @@ export default function BrochureDownload({topPosition, frmName}) {
               onChange={handleChange}
               placeholder="Name"
               required
-              className="w-full bg-white rounded-lg px-4 py-2 text-sm text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-white/60"
+              className="w-full bg-white rounded-lg px-4 py-1.5 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-white/60"
             />
+
             <input
               type="tel"
               name="number"
@@ -99,45 +116,45 @@ export default function BrochureDownload({topPosition, frmName}) {
               onChange={handleChange}
               placeholder="Mobile No"
               required
-              className="w-full bg-white rounded-lg px-4 py-2 text-sm text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-white/60"
+              className="w-full bg-white rounded-lg px-4 py-1.5 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-white/60"
             />
+
             <input
               type="email"
               name="email"
               value={leadData.email}
               onChange={handleChange}
               placeholder="E-Mail Address"
-              className="w-full bg-white rounded-lg px-4 py-2 text-sm text-gray-700 placeholder-gray-400 outline-none focus:ring-2 focus:ring-white/60"
+              className="w-full bg-white rounded-lg px-4 py-1.5 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-white/60"
             />
+
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-white hover:bg-gray-100 text-primary font-bold py-2 rounded-lg transition-colors duration-200 text-sm disabled:opacity-70 cursor-pointer"
+              className="w-full bg-white hover:bg-gray-100 text-primary font-bold py-1.5 rounded-lg transition duration-200 text-sm disabled:opacity-70 cursor-pointer"
             >
               {loading ? "Downloading..." : "Download"}
             </button>
           </form>
         </div>
 
-        {/* ── Tab Button — always attached to right edge of panel ── */}
         <button
-          onClick={() => setIsOpen((prev) => !prev)}
+          onClick={togglePanel}
           aria-label={isOpen ? "Close brochure panel" : "Open brochure panel"}
-          className="bg-primary text-white rounded-r-lg shadow-lg cursor-pointer flex flex-col items-center justify-start gap-2 px-[5px] py-2 self-start mt-0 transition-colors duration-200"
+          className="bg-primary btn-gradient-animation text-white rounded-r-lg shadow-lg cursor-pointer flex flex-col items-center gap-1 px-[4px] py-1 self-start transition duration-200"
         >
-
-          {/* "Download" on first line, "Broucher" on second line — vertical */}
           <span
-            className="text-[13px] font-bold leading-tight text-center"
-            style={{ writingMode: "vertical-rl", transform: "rotate(00deg)" }}
+            className="text-[13px] font-bold text-center leading-4"
+            style={{ writingMode: "vertical-rl" }}
           >
-            Download <br />{frmName}
+            Download <br />
+            {frmName}
           </span>
-          {/* Arrow — changes direction based on state */}
+
           {isOpen ? (
-            <FaArrowLeft className="text-white text-sm" />
+            <FaArrowLeft className="bg-white p-1 rounded-full text-md font-semibold text-primary" />
           ) : (
-            <FaArrowRight className="text-white text-sm" />
+            <FaArrowRight className="bg-white p-1 rounded-full text-md font-semibold text-primary" />
           )}
         </button>
       </div>

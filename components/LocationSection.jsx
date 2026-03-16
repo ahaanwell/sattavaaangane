@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-import { FaMapMarkerAlt } from "react-icons/fa";
 
 const landmarks = [
   { label: "Outer Ring Road", detail: "Immediate Access" },
@@ -9,7 +8,6 @@ const landmarks = [
   { label: "Koramangala", detail: "20 Minutes" },
 ];
 
-// Bellandur, Bangalore embed URL
 const MAP_EMBED_URL =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.683256338268!2d77.7662908!3d13.0558224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0ff2939d2fdb%3A0x53dac1d0b117326b!2sNH%2075%20%26%20Old%20Madras%20Rd%2C%20Bengaluru%2C%20Karnataka%20560049!5e0!3m2!1sen!2sin!4v1773561216072!5m2!1sen!2sin";
 
@@ -21,7 +19,6 @@ export default function LocationSection() {
       className="w-full bg-white pt-14 px-3 md:px-0"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Heading */}
         <h2
           id="location-heading"
           className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
@@ -29,7 +26,6 @@ export default function LocationSection() {
           Location &amp; Connectivity
         </h2>
 
-        {/* Divider */}
         <div className="w-full h-px bg-gray-200 mb-5" />
 
         <div className="mb-5 space-y-6 text-gray-800">
@@ -58,9 +54,7 @@ export default function LocationSection() {
           </p>
         </div>
 
-        {/* Map Card */}
         <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-8">
-          {/* Google Maps iframe */}
           <div className="w-full h-[380px] md:h-[460px]">
             <iframe
               src={MAP_EMBED_URL}
@@ -75,9 +69,8 @@ export default function LocationSection() {
             />
           </div>
 
-          {/* Know More CTA */}
           <Link
-            href="https://maps.google.com/?q=Bellandur,Bangalore"
+            href="https://maps.app.goo.gl/mgHt22xpDC33Br8B9"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Know more about Sattva Aangane location in Bellandur Bangalore"
@@ -85,6 +78,34 @@ export default function LocationSection() {
           >
             Know More About Location
           </Link>
+        </div>
+
+        <div className="text-gray-800 flex justify-between mt-4">
+          <div>
+            <h2 className="text-2xl font-semibold mb-4">
+    Project Address
+  </h2>
+
+  <p className="leading-7">
+    <strong>Sattva Aangane</strong><br/>
+    Cheemasandra Village, Bidarahalli Hobli,<br/>
+    Budigere Cross, Off Old Madras Road (NH-75),<br/>
+    East Bangalore, Bengaluru Urban District,<br/>
+    Karnataka – 560049.
+  </p>
+          </div>
+
+  <div>
+    <h3 className="text-2xl font-semibold mb-4">
+    Landmark and Map Details
+  </h3>
+
+  <div className="space-y-2">
+    <p><strong>Landmark:</strong> Near Budigere Cross Junction, Off Old Madras Road (NH-75)</p>
+    <p><strong>Coordinates:</strong> 13.0491° N, 77.7483° E</p>
+    <p><strong>Google Plus Code:</strong> 2PXX+FM8, Budigere Cross, Bengaluru, Karnataka 560049</p>
+  </div>
+  </div>
         </div>
 
         <div className="pt-6 text-gray-800">

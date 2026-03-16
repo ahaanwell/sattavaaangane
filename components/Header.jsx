@@ -30,7 +30,6 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-14">
 
-            {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
               <img
                 src="/images/logo.jpeg"
@@ -39,7 +38,6 @@ export default function Header() {
               />
             </Link>
 
-            {/* Desktop Menu */}
             <nav className="hidden lg:flex items-center space-x-4">
               {navLinks.map((item, index) => {
                 const isActive = pathname === item.link;
@@ -65,13 +63,12 @@ export default function Header() {
                   setModelBtnLabel("Download")
                   setIsModalOpen(true);
                 }}
-                className="font-medium transition px-3 py-2 text-gray-700 hover:text-[#ce3125]"
+                className="font-medium cursor-pointer transition px-3 py-2 text-gray-700 hover:text-[#ce3125]"
               >
                 Brochure
               </button>
             </nav>
 
-            {/* Desktop WhatsApp */}
             <div className="hidden lg:flex">
               <Link
                 href="https://wa.me/"
@@ -82,7 +79,6 @@ export default function Header() {
               </Link>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               className="lg:hidden text-primary"
               onClick={() => setOpen(true)}
@@ -93,7 +89,6 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Overlay */}
       <div
         className={`fixed inset-0 bg-black/40 z-40 transition-opacity duration-500 ${
           open ? "opacity-100 visible" : "opacity-0 invisible"
@@ -101,14 +96,12 @@ export default function Header() {
         onClick={() => setOpen(false)}
       />
 
-      {/* Right Side Drawer */}
       <div
         className={`fixed top-0 right-0 h-full w-72 bg-white shadow-xl z-50 transform transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
         ${open ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="p-6 space-y-4">
 
-          {/* Close Button */}
           <div className="flex justify-end">
             <button 
             className="text-black"
@@ -117,7 +110,6 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Navigation Links */}
           {navLinks.map((item, index) => {
             const isActive = pathname === item.link;
 
@@ -137,7 +129,6 @@ export default function Header() {
             );
           })}
 
-          {/* Brochure Button */}
           <button
             onClick={() => {
               SetModelHeading("Download Brochure");
@@ -145,12 +136,11 @@ export default function Header() {
               setIsModalOpen(true);
               setOpen(false);
             }}
-            className="block w-full text-left px-3 py-2 font-medium text-gray-700 hover:text-[#ce3125]"
+            className="block cursor-pointer w-full text-left px-3 py-2 font-medium text-gray-700 hover:text-[#ce3125]"
           >
             Brochure
           </button>
 
-          {/* WhatsApp Button */}
           <Link
             href="https://wa.me/"
             className="flex justify-center items-center gap-2 bg-primary text-white py-2 rounded-full mt-6"
@@ -161,7 +151,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Lead Modal */}
       <LeadModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

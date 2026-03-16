@@ -3,7 +3,6 @@ export default function Footer() {
     <footer>
       <div className="bg-white p-4 flex flex-col gap-3 relative border border-gray-200">
 
-        {/* Disclaimer */}
         <div className="lg:px-6">
           <p className="text-xs text-gray-700 leading-relaxed">
             <span className="font-medium">Disclaimer</span> : Please be advised that this website
@@ -24,7 +23,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Credits */}
         <div className="flex justify-center border-t border-black mt-2 pt-2">
           <p className="text-sm text-gray-700">
             Developed and Marketing by{" "}

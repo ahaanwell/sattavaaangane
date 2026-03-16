@@ -11,7 +11,6 @@ export default function MobileBottomBar() {
     <section className="sticky bottom-0 z-50 lg:hidden md:hidden">
       <div className="flex bg-primary p-0.5">
 
-        {/* Enquiry */}
         <button
         onClick={()=>setIsModalOpen(true)}
           className="flex-1 flex items-center justify-center gap-1 py-2 border-r-2 border-white cursor-pointer"

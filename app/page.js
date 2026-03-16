@@ -7,14 +7,12 @@ import HeroSection from "@/components/HeroSection";
 import LocationSection from "@/components/LocationSection";
 import MasterPlanSection from "@/components/MasterPlanSection";
 import MoreAboutProjectSection from "@/components/MoreAboutProjectSection";
-import OverviewSection from "@/components/OverviewSection";
 import PriceListSection from "@/components/PriceListSection";
 import ProjectHighlights from "@/components/ProjectHighlights";
 export default function Home() {
   return (
     <>
     <HeroSection/>
-    {/* <OverviewSection/> */}
     <ProjectHighlights/>
     <PriceListSection/>
     <FloorPlanSection/>

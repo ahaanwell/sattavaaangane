@@ -41,7 +41,6 @@ export default function GallerySection() {
       className="w-full bg-white pt-14 px-3 md:px-0"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Heading */}
         <h2
           id="gallery-heading"
           className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
@@ -49,10 +48,8 @@ export default function GallerySection() {
           Sattva Aangane Gallery
         </h2>
 
-        {/* Divider */}
         <div className="w-full h-px bg-gray-200 mb-10" />
 
-        {/* Grid */}
         <div
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4"
           aria-label="Sattva Aangane project gallery"
@@ -63,7 +60,6 @@ export default function GallerySection() {
               className="group relative rounded-xl overflow-hidden cursor-pointer shadow-sm border border-gray-100"
               onClick={() => openLightbox(index)}
             >
-              {/* Image */}
               <div className="aspect-[4/3] bg-gray-100 overflow-hidden">
                 <img
                   src={img.src}
@@ -73,7 +69,6 @@ export default function GallerySection() {
                 />
               </div>
 
-              {/* Hover overlay */}
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="w-11 h-11 rounded-full border-2 border-white flex items-center justify-center text-white text-base">
                   <FaExpand />
@@ -84,7 +79,6 @@ export default function GallerySection() {
         </div>
       </div>
 
-      {/* Lightbox */}
       {lightboxIndex !== null && (
         <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center px-4"
@@ -95,25 +89,22 @@ export default function GallerySection() {
           aria-modal="true"
           aria-label="Image lightbox"
         >
-          {/* Close button */}
           <button
             onClick={closeLightbox}
-            className="absolute top-4 right-4 text-white text-2xl p-2 hover:text-gray-300 transition-colors z-10"
+            className="absolute top-4 cursor-pointer right-4 text-white text-2xl p-2 hover:text-gray-300 transition-colors z-10"
             aria-label="Close lightbox"
           >
             <FaTimes />
           </button>
 
-          {/* Prev button */}
           <button
             onClick={(e) => { e.stopPropagation(); goPrev(); }}
-            className="absolute left-4 text-white text-2xl p-3 hover:text-gray-300 transition-colors z-10"
+            className="absolute cursor-pointer left-4 text-white text-2xl p-3 hover:text-gray-300 transition-colors z-10"
             aria-label="Previous image"
           >
             <FaChevronLeft />
           </button>
 
-          {/* Image */}
           <div
             className="max-w-4xl w-full max-h-[85vh] flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
@@ -125,16 +116,14 @@ export default function GallerySection() {
             />
           </div>
 
-          {/* Next button */}
           <button
             onClick={(e) => { e.stopPropagation(); goNext(); }}
-            className="absolute right-4 text-white text-2xl p-3 hover:text-gray-300 transition-colors z-10"
+            className="absolute cursor-pointer right-4 text-white text-2xl p-3 hover:text-gray-300 transition-colors z-10"
             aria-label="Next image"
           >
             <FaChevronRight />
           </button>
 
-          {/* Counter */}
           <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/70 text-sm">
             {lightboxIndex + 1} / {galleryImages.length}
           </div>
