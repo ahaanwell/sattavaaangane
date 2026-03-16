@@ -1,3 +1,4 @@
+import BlogSection from "@/components/BlogsSection";
 import PricePage from "./PricePage";
 
 export const metadata = {
@@ -164,6 +165,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <PricePage />
+      <BlogSection/>
     </>
   );
 }

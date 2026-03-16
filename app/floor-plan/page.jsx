@@ -1,3 +1,4 @@
+import BlogSection from "@/components/BlogsSection";
 import FloorPlanPage from "./FloorPlanPage";
 
 export const metadata = {
@@ -176,6 +177,7 @@ export default function page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <FloorPlanPage />
+      <BlogSection/>
     </>
   );
 }

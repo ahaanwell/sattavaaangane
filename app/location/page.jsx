@@ -1,3 +1,4 @@
+import BlogSection from "@/components/BlogsSection";
 import LocationPage from "./LocationPage";
 
 export const metadata = {
@@ -172,6 +173,7 @@ export default function page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <LocationPage />
+      <BlogSection/>
     </>
   );
 }
