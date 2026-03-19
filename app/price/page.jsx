@@ -4,12 +4,12 @@ import PricePage from "./PricePage";
 export const metadata = {
   title: {
     default:
-      "Sattva Aangane Price | 2, 3 & 4 BHK Apartment Price List Budigere Cross Bangalore",
+      "Sattva Aangane Price | Old Madras Main Road | Pre Launch Offer",
     template: "%s | Sattva Aangane Price",
   },
 
   description:
-    "Check the latest Sattva Aangane price list for premium 2, 3 and 4 BHK apartments at Budigere Cross, Old Madras Main Road Bangalore. View detailed pricing, unit configurations, and flexible payment plans.",
+    "Discover the latest Sattva Aangane price on Old Madras Main Road with exclusive pre-launch offers. Explore premium homes, floor plans, and early-bird deals in East Bangalore.",
 
   keywords: [
     "Sattva Aangane price",

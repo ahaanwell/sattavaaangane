@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const toLocalImage = (cloudinaryUrl) => {
 
   if (!cloudinaryUrl) return "/images/default.jpg"; 
@@ -11,8 +13,15 @@ const toLocalImage = (cloudinaryUrl) => {
 
 export default function BlogDetailsPage({ blogData }) {
   return (
-    <main className="bg-white py-12 px-4">
-        <article className="max-w-4xl mx-auto">
+    <main className="bg-white">
+      <div className=" tracking-widest text-sm md:text-base mb-2 bg-gray-500 flex justify-center items-center py-12 text-white">
+          <Link href="/" className="hover:text-gray-300">
+            Home
+          </Link>
+          <span className="mx-2">/</span>
+          <span>{blogData?.title}</span>
+        </div>
+        <article className="max-w-4xl mx-auto py-12 px-4">
       <h1 className="text-3xl md:text-4xl font-bold leading-tight text-gray-900 mb-6">
           {blogData?.title}
         </h1>

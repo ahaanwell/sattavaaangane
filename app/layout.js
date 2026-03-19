@@ -21,12 +21,12 @@ const robotoMono = Roboto_Mono({
 export const metadata = {
   title: {
     default:
-      "Sattva Aangane Bangalore | Price, Floor Plan, Brochure | 2, 3 & 4 BHK Apartments Budigere Cross",
+      "Sattva Aangane | Old Madras Road | Budigere Cross | Review | Brochure  | New Launch",
     template: "%s | Sattva Aangane Bangalore",
   },
 
   description:
-    "Sattva Aangane is a premium residential apartment project located on Old Madras Main Road, Budigere Cross, Bangalore. Spread across 10+ acres with 4 towers and G+35 floors offering luxury 2, 3 and 4 BHK apartments with modern amenities and excellent connectivity.",
+    "Sattva Aangane a new launch premium apartment project in Old Madras Road near Budigere Cross, Bangalore. Covers 10 acres of land, it offers 2, 3, and 4 BHK apartments over 4 high-rise towers.",
 
   keywords: [
     "Sattva Aangane",
@@ -112,7 +112,7 @@ export const metadata = {
   category: "Real Estate",
 
   verification: {
-    google: "google-site-verification-code",
+    google: "XnQjIMSQGzsEA6dSOT_sqOIHL__aRj8zn2coEhljaKc",
   },
 };
 
