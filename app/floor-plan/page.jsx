@@ -4,7 +4,7 @@ import FloorPlanPage from "./FloorPlanPage";
 export const metadata = {
   title: {
     default:
-      "Sattva Aangane Floor Plan | 2, 3 & 4 BHK Apartment Layouts Budigere Cross Bangalore",
+      "Sattva Aangane Floor Plan | Old Madras Main Road | Pre Launch Offer",
     template: "%s | Sattva Aangane Floor Plan",
   },
 
