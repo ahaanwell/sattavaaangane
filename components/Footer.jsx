@@ -1,7 +1,9 @@
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer>
-      <div className="bg-white p-4 flex flex-col gap-3 relative border border-gray-200">
+      <div className="bg-white p-4 flex flex-col gap-4 relative border border-gray-200">
 
         <div className="lg:px-6">
           <p className="text-xs text-gray-700 leading-relaxed">
@@ -23,20 +25,55 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex justify-center border-t border-black mt-2 pt-2">
-          <p className="text-sm text-gray-700">
-            Developed and Marketing by{" "}
+        {/* Divider */}
+          <div className="border-t border-gray-200"></div>
+
+          {/* Social Media */}
+          <div className="flex justify-center gap-5">
             <a
-              href="https://www.mndigitalagency.com"
+              href="https://www.facebook.com/sattvaaangane"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-700 transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
             >
-              M2N Digital Agency
+              <FaFacebookF size={14} />
             </a>
-          </p>
-        </div>
 
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
+            >
+              <FaInstagram size={14} />
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-blue-700 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
+            >
+              <FaLinkedinIn size={14} />
+            </a>
+
+            <a
+              href="https://x.com/sattvaaangane"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-sky-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
+            >
+              <FaTwitter size={14} />
+            </a>
+            <a
+              href="https://www.youtube.com/@sattvaaangane"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-red-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
+            >
+              <FaYoutube size={14} />
+            </a>
+          </div>
       </div>
     </footer>
   );
