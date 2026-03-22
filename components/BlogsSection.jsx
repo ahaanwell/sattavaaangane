@@ -3,7 +3,8 @@ import Link from "next/link";
 // export const revalidate = 3600;
 async function getBlogs() {
   const res = await fetch(process.env.NEXT_PUBLIC_API, {
-    headers: { "x-api-key": process.env.NEXT_PUBLIC_API_KEY }
+    headers: { "x-api-key": process.env.NEXT_PUBLIC_API_KEY },
+    cache: "no-store"
   });
   if (!res.ok) return [];
 
