@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-// export const revalidate = 3600;
+export const revalidate = 60;
 async function getBlogs() {
   const res = await fetch(process.env.NEXT_PUBLIC_API, {
-    headers: { "x-api-key": process.env.NEXT_PUBLIC_API_KEY },
-    cache: "no-store"
+    headers: { "x-api-key": process.env.NEXT_PUBLIC_API_KEY }
   });
   if (!res.ok) return [];
 
