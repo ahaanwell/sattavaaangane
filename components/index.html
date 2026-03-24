@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>SellerGrid AI Dashboard</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+}
+</style>
+</head>
+
+<body class="text-white">
+
+<div class="p-6">
+
+  <!-- Header -->
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold">🚀 SellerGrid AI Dashboard</h1>
+    <input id="search" placeholder="Search reviews..." class="px-4 py-2 rounded bg-gray-800"/>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid md:grid-cols-4 gap-4 mb-6">
+
+    <div class="card p-4 rounded-xl hover:scale-105 transition">
+      <p>Total Reviews</p>
+      <h2 id="total" class="text-2xl font-bold"></h2>
+    </div>
+
+    <div class="card p-4 rounded-xl text-green-400">
+      <p>Positive ↑</p>
+      <h2 id="positive"></h2>
+    </div>
+
+    <div class="card p-4 rounded-xl text-red-400">
+      <p>Negative ↓</p>
+      <h2 id="negative"></h2>
+    </div>
+
+    <div class="card p-4 rounded-xl text-yellow-400">
+      <p>Neutral</p>
+      <h2 id="neutral"></h2>
+    </div>
+
+  </div>
+
+  <!-- Chart + AI -->
+  <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+    <div class="card p-5 rounded-xl">
+      <h3>📊 Sentiment Trend</h3>
+      <canvas id="chart"></canvas>
+    </div>
+
+    <div class="card p-5 rounded-xl">
+      <h3>🤖 AI Insights</h3>
+      <p id="aiText" class="text-gray-300 mt-2">
+        Click generate to analyze reviews...
+      </p>
+      <button onclick="generateAI()" class="mt-4 bg-blue-600 px-4 py-2 rounded">
+        Generate Insights
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Filters -->
+  <div class="flex gap-4 mb-4">
+    <select id="platform" class="bg-gray-800 px-3 py-2 rounded">
+      <option value="">All Platforms</option>
+      <option>Amazon</option>
+      <option>Flipkart</option>
+    </select>
+
+    <select id="sentiment" class="bg-gray-800 px-3 py-2 rounded">
+      <option value="">All Sentiment</option>
+      <option>Positive</option>
+      <option>Negative</option>
+      <option>Neutral</option>
+    </select>
+  </div>
+
+  <!-- Reviews -->
+  <div id="reviews" class="space-y-4"></div>
+
+</div>
+
+<script>
+const data = [
+  {platform:"Amazon", rating:5, sentiment:"Positive", text:"Amazing quality product"},
+  {platform:"Flipkart", rating:2, sentiment:"Negative", text:"Late delivery"},
+  {platform:"Amazon", rating:3, sentiment:"Neutral", text:"Okay product"},
+  {platform:"Flipkart", rating:1, sentiment:"Negative", text:"Very bad packaging"},
+  {platform:"Amazon", rating:5, sentiment:"Positive", text:"Loved it"},
+];
+
+function renderReviews(list){
+  const container = document.getElementById("reviews");
+  container.innerHTML = "";
+
+  list.forEach(r=>{
+    container.innerHTML += `
+      <div class="card p-4 rounded-xl">
+        <div class="flex justify-between">
+          <span>${r.platform} ⭐${r.rating}</span>
+          <span>${r.sentiment}</span>
+        </div>
+        <p class="text-gray-400 mt-2">${r.text}</p>
+      </div>
+    `;
+  });
+}
+
+function updateStats(list){
+  document.getElementById("total").innerText = list.length;
+  document.getElementById("positive").innerText = list.filter(r=>r.sentiment=="Positive").length;
+  document.getElementById("negative").innerText = list.filter(r=>r.sentiment=="Negative").length;
+  document.getElementById("neutral").innerText = list.filter(r=>r.sentiment=="Neutral").length;
+}
+
+function filter(){
+  let filtered = data;
+
+  const platform = document.getElementById("platform").value;
+  const sentiment = document.getElementById("sentiment").value;
+  const search = document.getElementById("search").value.toLowerCase();
+
+  if(platform) filtered = filtered.filter(r=>r.platform==platform);
+  if(sentiment) filtered = filtered.filter(r=>r.sentiment==sentiment);
+  if(search) filtered = filtered.filter(r=>r.text.toLowerCase().includes(search));
+
+  renderReviews(filtered);
+  updateStats(filtered);
+}
+
+document.getElementById("platform").onchange = filter;
+document.getElementById("sentiment").onchange = filter;
+document.getElementById("search").oninput = filter;
+
+function generateAI(){
+  document.getElementById("aiText").innerText =
+  "Customers love product quality but complain about delivery delays. Focus on logistics improvement.";
+}
+
+renderReviews(data);
+updateStats(data);
+
+new Chart(document.getElementById("chart"), {
+  type: "bar",
+  data: {
+    labels: ["Positive","Negative","Neutral"],
+    datasets: [{
+      data: [2,2,1]
+    }]
+  }
+});
+</script>
+
+</body>
+</html>

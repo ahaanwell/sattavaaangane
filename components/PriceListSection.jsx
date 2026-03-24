@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FaDownload } from "react-icons/fa";
 import LeadModal from "./LeadModal";
+import EMICalculator from "./Emicalculator";
 
 const priceData = [
   { type: "2 BHK",        size: "On Request",    price: "₹ 1.2 Cr* onwards" },
@@ -153,6 +154,7 @@ export default function PriceListSection() {
     </p>
 
   </div>
+  <EMICalculator/>
 
 </div>
       </div>

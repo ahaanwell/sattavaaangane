@@ -1,3 +1,5 @@
+import SattvaProjects from "./SattvaProjects";
+
 /* eslint-disable react/no-unescaped-entities */
 export default function MoreAboutProjectSection() {
   return (
@@ -558,6 +560,10 @@ export default function MoreAboutProjectSection() {
             areas by featuring large homes, neatly maintained grounds, and
             livable features.
           </p>
+        </div>
+        <div className="space-y-6 text-gray-800 mt-2">
+          <h2 className="text-2xl font-semibold mb-6">Sattva Group Latest Projects</h2>
+          <SattvaProjects/>
         </div>
       </div>
     </section>
