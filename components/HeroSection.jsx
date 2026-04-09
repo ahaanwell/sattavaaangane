@@ -114,7 +114,7 @@ export default function HeroSection() {
 
         <div className="bg-white px-5 pt-7 pb-5 text-center">
           <h1 className="text-3xl font-extrabold text-gray-900 mb-1">Sattva Aangane</h1>
-          <p className="text-gray-800 text-xl mb-2 font-semiblod">By Sattav Group</p>
+          <p className="text-gray-800 text-xl mb-2 font-semiblod">By Sattva Group</p>
           <div className="flex items-center justify-center gap-1 font-medium text-gray-700 text-lg mb-6">
             <FaMapMarkerAlt />
             <span>Old Madras Main Road, Budigere Cross</span>
