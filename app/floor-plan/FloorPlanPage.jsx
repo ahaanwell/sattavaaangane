@@ -1,14 +1,7 @@
-"use client";
-import LeadModal from "@/components/LeadModal";
+import DownloadActions from "@/components/DownloadActions";
 import PageHero from "@/components/PageHero";
-import { useState } from "react";
-import { FaDownload } from "react-icons/fa";
-import { IoPricetagsOutline } from "react-icons/io5";
 
 function FloorPlanPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modelHeading, SetModelHeading] = useState("");
-
   return (
     <>
       <main className="w-full bg-white px-4 md:px-0">
@@ -19,26 +12,7 @@ function FloorPlanPage() {
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800 text-center">
             Sattva Aangane Floor Plan
           </h1>
-          <div className="flex justify-center items-center gap-6 mt-3">
-            <button
-              onClick={() => {
-                SetModelHeading("Download Broucher");
-                setIsModalOpen(true);
-              }}
-              className="border border-blue-900 px-5 py-2 text-lg rounded cursor-pointer flex justify-center items-center gap-2 text-primary font-medium"
-            >
-              <FaDownload /> Broucher
-            </button>
-            <button
-              onClick={() => {
-                SetModelHeading("Download Cost Sheet");
-                setIsModalOpen(true);
-              }}
-              className="border border-blue-900 px-5 py-2 text-lg rounded cursor-pointer flex justify-center items-center gap-2 text-primary font-medium"
-            >
-              <IoPricetagsOutline /> Cost Sheet
-            </button>
-          </div>
+          <DownloadActions/>
           <div className="space-y-6 mt-5 text-gray-800">
             <p>
               The <b><a href="https://www.sattvaaangane.co/">Sattva Aangane</a> Floor Plan</b> presents thoughtfully designed <b>2, 3,
@@ -118,10 +92,7 @@ function FloorPlanPage() {
                     <td className="border p-3">
                         <button 
                         className="cursor-pointer" 
-                        onClick={() => {
-                SetModelHeading("Download 3 BHK Price");
-                setIsModalOpen(true);
-              }}
+                        
                         >Enquiry Open
                         </button>
                     </td>
@@ -131,10 +102,6 @@ function FloorPlanPage() {
                     <td className="border p-3">
                         <button 
                         className="cursor-pointer" 
-                        onClick={() => {
-                SetModelHeading("Download 4 BHK Price");
-                setIsModalOpen(true);
-              }}
                         >Enquiry Open
                         </button>
                     </td>
@@ -445,12 +412,6 @@ function FloorPlanPage() {
           </div>
         </div>
       </main>
-      <LeadModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        modelHeading={modelHeading}
-        modelBtnLabel="Download"
-      />
     </>
   );
 }

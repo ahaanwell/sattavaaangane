@@ -1,14 +1,7 @@
-"use client";
-import LeadModal from "@/components/LeadModal";
+import DownloadActions from "@/components/DownloadActions";
 import PageHero from "@/components/PageHero";
-import { useState } from "react";
-import { FaDownload } from "react-icons/fa";
-import { IoPricetagsOutline } from "react-icons/io5";
 
 function PricePage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modelHeading, SetModelHeading] = useState("");
-
   return (
     <>
       <main className="w-full bg-white px-4 md:px-0">
@@ -19,26 +12,7 @@ function PricePage() {
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800 text-center">
             Sattva Aangane Price
           </h1>
-          <div className="flex justify-center items-center gap-6 mt-3">
-            <button
-              onClick={() => {
-                SetModelHeading("Download Broucher");
-                setIsModalOpen(true);
-              }}
-              className="border border-blue-900 px-5 py-2 text-lg rounded cursor-pointer flex justify-center items-center gap-2 text-primary font-medium"
-            >
-              <FaDownload /> Broucher
-            </button>
-            <button
-              onClick={() => {
-                SetModelHeading("Download Cost Sheet");
-                setIsModalOpen(true);
-              }}
-              className="border border-blue-900 px-5 py-2 text-lg rounded cursor-pointer flex justify-center items-center gap-2 text-primary font-medium"
-            >
-              <IoPricetagsOutline /> Cost Sheet
-            </button>
-          </div>
+          <DownloadActions/>
          <div className="space-y-6 text-gray-800 mt-5">
             <p>
               The <a href="https://www.sattvaaangane.co/price"><b>Sattva Aangane Price</b></a> is designed to offer excellent value for
@@ -107,10 +81,7 @@ function PricePage() {
                     <td className="border p-3">
                         <button 
                         className="cursor-pointer" 
-                        onClick={() => {
-                SetModelHeading("Download 3 BHK Price");
-                setIsModalOpen(true);
-              }}
+                        
                         >Enquiry Open
                         </button>
                     </td>
@@ -121,10 +92,7 @@ function PricePage() {
                     <td className="border p-3">
                         <button 
                         className="cursor-pointer" 
-                        onClick={() => {
-                SetModelHeading("Download 3 BHK Price");
-                setIsModalOpen(true);
-              }}
+                        
                         >Enquiry Open
                         </button>
                     </td>
@@ -276,12 +244,6 @@ function PricePage() {
           </div>
         </div>
       </main>
-      <LeadModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        modelHeading={modelHeading}
-        modelBtnLabel="Download"
-      />
     </>
   );
 }

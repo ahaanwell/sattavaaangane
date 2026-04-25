@@ -10,7 +10,7 @@ export default async function sitemap() {
         headers: {
           "x-api-key": process.env.NEXT_PUBLIC_API_KEY,
         },
-        next: { revalidate: 3600 }, // ✅ allow static generation with revalidation
+        next: { revalidate: 3600 },
       }
     );
 
