@@ -51,7 +51,7 @@ export default function LeadModal({
     const data = {
       name,
       email,
-      phone: number,
+      number,
       country_code: countryCode,
       company_email: "info@searchmyspace.in",
       project_name: "Sattva Aangane",
@@ -59,7 +59,7 @@ export default function LeadModal({
 
     try {
       const res = await fetch(
-        "https://smtpwithexcel.vercel.app/send-lead",
+        "https://slategrey-narwhal-636137.hostingersite.com/send-lead",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

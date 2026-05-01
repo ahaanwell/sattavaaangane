@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 const amenitiesData = [
   { id: 1,  name: "Gymnasium",           image: "./images/gym.svg",    alt: "Gymnasium" },

@@ -42,14 +42,14 @@ export default function BrochureDownload({
     const data = {
       name,
       email,
-      phone:number,
+      number,
       company_email: "info@searchmyspace.in",
       project_name: "Sattva Aangane",
     };
 
     try {
       const res = await fetch(
-        "https://smtpwithexcel.vercel.app/send-lead",
+        "https://slategrey-narwhal-636137.hostingersite.com/send-lead",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
