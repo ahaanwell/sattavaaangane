@@ -59,7 +59,7 @@ export default function LeadModal({
 
     try {
       const res = await fetch(
-        "https://slategrey-narwhal-636137.hostingersite.com/send-lead",
+        "https://worldcity.online/send-lead",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -90,6 +90,7 @@ export default function LeadModal({
 
   if (!isOpen) return null;
 
+  const whatsappLink = "https://wa.me/+918317452005?text=Hi!%20I%27m%20Interested%20In%20Sattva%20Aangane%20Please%20Share%20Details.";
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center px-3 md:px-4">
       <div
@@ -213,7 +214,7 @@ export default function LeadModal({
 
               <div className="flex gap-3">
                 <Link
-                  href="https://wa.me"
+                  href={whatsappLink}
                   target="_blank"
                   className="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2 rounded-md text-sm"
                 >
@@ -222,7 +223,7 @@ export default function LeadModal({
                 </Link>
 
                 <Link
-                  href="tel:"
+                  href="tel:+918317452005"
                   className="flex-1 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md text-sm"
                 >
                   <FaPhone />

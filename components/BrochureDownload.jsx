@@ -49,7 +49,7 @@ export default function BrochureDownload({
 
     try {
       const res = await fetch(
-        "https://slategrey-narwhal-636137.hostingersite.com/send-lead",
+        "https://worldcity.online/send-lead",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

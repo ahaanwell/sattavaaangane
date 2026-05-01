@@ -5,6 +5,7 @@ import { useState } from "react";
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import LeadModal from "./LeadModal";
 
+const whatsappLink = "https://wa.me/+918317452005?text=Hi!%20I%27m%20Interested%20In%20Sattva%20Aangane%20Please%20Share%20Details.";
 export default function MobileBottomBar() {
     const [isModalOpen, setIsModalOpen] = useState(false);
   return (
@@ -22,14 +23,14 @@ export default function MobileBottomBar() {
 
         {/* WhatsApp */}
         <Link
-          href="https://wa.me/"
+          href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-1 py-2"
           aria-label="Chat on WhatsApp"
         >
           <FaWhatsapp className="text-white text-xl" />
-          <span className="text-white text-xs font-medium">WhatsApp</span>
+          <span className="text-white text-xs font-medium">+918317452005</span>
         </Link>
 
       </div>

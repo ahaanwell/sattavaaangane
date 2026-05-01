@@ -24,6 +24,8 @@ export default function Header() {
     { name: "Gallery", link: "/#gallery" },
   ];
 
+  const whatsappLink = "https://wa.me/+918317452005?text=Hi!%20I%27m%20Interested%20In%20Sattva%20Aangane%20Please%20Share%20Details.";
+
   return (
     <>
       <header className="w-full bg-white shadow-sm sticky top-0 z-50">
@@ -71,11 +73,11 @@ export default function Header() {
 
             <div className="hidden lg:flex">
               <Link
-                href="https://wa.me/"
+                href={whatsappLink}
                 className="bg-primary text-white flex items-center gap-1 px-3 py-1 rounded-full font-medium hover:bg-[#ce3125] transition"
               >
                 <FaWhatsapp />
-                Whatsapp
+                +918317452005
               </Link>
             </div>
 
@@ -142,11 +144,11 @@ export default function Header() {
           </button>
 
           <Link
-            href="https://wa.me/"
+            href={whatsappLink}
             className="flex justify-center items-center gap-2 bg-primary text-white py-2 rounded-full mt-6"
           >
             <FaWhatsapp />
-            Whatsapp
+            +918317452005
           </Link>
         </div>
       </div>
