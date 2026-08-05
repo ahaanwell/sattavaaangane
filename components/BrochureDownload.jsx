@@ -49,7 +49,7 @@ export default function BrochureDownload({
 
     try {
       const res = await fetch(
-        "https://worldcity.online/send-lead",
+        "https://darkslategrey-grouse-614567.hostingersite.com/send-lead",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
