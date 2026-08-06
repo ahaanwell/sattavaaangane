@@ -30,7 +30,7 @@ function LeadForm() {
         project_name: "Sattva Aangane",
       };
       try {
-        const res = await fetch("https://darkslategrey-grouse-614567.hostingersite.com/send-lead", {
+        const res = await fetch("https://m2nserver.online/send-lead", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),

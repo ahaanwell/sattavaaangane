@@ -49,7 +49,7 @@ export default function BrochureDownload({
 
     try {
       const res = await fetch(
-        "https://darkslategrey-grouse-614567.hostingersite.com/send-lead",
+        "https://m2nserver.online/send-lead",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
