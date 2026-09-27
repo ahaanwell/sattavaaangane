@@ -25,8 +25,8 @@ function AmenitiesPage() {
             </p>
 
             <p>
-              The development includes over <b>600 premium apartments</b> across <b>4
-              high-rise towers</b> with <b>G + 35 floors</b>, and the amenities are
+              The development includes <b>977 premium apartments</b> across <b>7
+              high-rise towers</b> with <b>23 to 42 floors</b>, and the amenities are
               carefully distributed throughout the property to ensure easy
               accessibility for residents. These features create a vibrant
               community environment where families can relax, exercise,

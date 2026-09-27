@@ -33,7 +33,7 @@ export default function FaqSection() {
               2. What Types of units are there in the project?
             </h3>
             <p className="text-gray-600 mt-1">
-              The project has 2 BHK, 3 BHK, and 4 BHK units.
+              The project has 3 BHK, 4 BHK, and Duplex 4 BHK units.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function FaqSection() {
               3. How many towers are planned at Sattva Aangane?
             </h3>
             <p className="text-gray-600 mt-1">
-              The residential complex will have four high-rise structures.
+              The residential complex will have seven high-rise structures.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function FaqSection() {
               4. What are the starting prices for apartments?
             </h3>
             <p className="text-gray-600 mt-1">
-              The project's units start at roughly ₹1.2 crore.
+              The project's units start at roughly ₹2.66 crore.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export default function FaqSection() {
               5. How many units are available for the project?
             </h3>
             <p className="text-gray-600 mt-1">
-              The project is projected to have about 600 residential units.
+              The project is projected to have 977 residential units.
             </p>
           </div>
 

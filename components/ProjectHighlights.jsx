@@ -22,17 +22,17 @@ const highlights = [
   {
     icon: <FaRupeeSign className="text-3xl text-primary" />,
     label: "Starting Price",
-    value: "₹1.2 Cr* Onwards",
+    value: "₹ 2.66 Cr* Onwards",
   },
   {
     icon: <MdApartment className="text-3xl text-primary" />,
     label: "Unit Type",
-    value: "2, 3 & 4 BHK",
+    value: "3, 4 BHK + Duplex",
   },
   {
     icon: <FaVectorSquare className="text-3xl text-primary" />,
     label: "Unit Sizes",
-    value: "...",
+    value: "1800 to 5100 sq. ft.",
   },
   {
     icon: <FaDoorOpen className="text-3xl text-primary" />,
@@ -47,17 +47,17 @@ const highlights = [
   {
     icon: <FaCity className="text-3xl text-primary" />,
     label: "Total Units",
-    value: "600+",
+    value: "977 Units",
   },
   {
     icon: <FaBuilding className="text-3xl text-primary" />,
     label: "Total No. of Floors",
-    value: "G + 35 Floors",
+    value: "23 + 29 to 42 Floors",
   },
   {
     icon: <FaBuilding className="text-3xl text-primary" />,
     label: "No Of Towers",
-    value: "4",
+    value: "7",
   },
   {
     icon: <FaHelmetSafety className="text-3xl text-primary" />,
@@ -137,20 +137,19 @@ export default function ProjectHighlights() {
             <p>
               The project covers more than <b>10 acres</b> of land and has
               planned apartment buildings bordered by planted green areas and
-              trees. The building includes four high rise towers that reach up
-              to
-              <b> G+35 floors</b>. It offers amazing views of the city and a
+              trees. The building includes seven high rise towers ranging from
+              <b> 23 to 42 floors</b>. It offers amazing views of the city and a
               peaceful place to live in a neighborhood that is growing.
             </p>
             <p>
-              The building has <b>2 BHK, 3 BHK, and 4 BHK homes</b>, so it can
+              The building has <b>3 BHK, 4 BHK, and Duplex 4 BHK homes</b> from <b>1800 to 5100 sq. ft.</b>, so it can
               fit the needs of a wide range of customers, such as young workers,
               families and businessmen. Each home is designed with attention to
               detail, efficient layouts and modern architecture that supports
               comfortable everyday living.
             </p>
             <p>
-              Sattva Aangane will have more than 600 high end homes, as well as
+              Sattva Aangane will have 977 high end homes, as well as
               lifestyle perks and public areas that make living better overall.
               Building an active neighbourhood where people can live, work and
               play without leaving the safety of their gated community is the
@@ -194,23 +193,23 @@ export default function ProjectHighlights() {
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Total Towers</td>
-                  <td className="p-2">4</td>
+                  <td className="p-2">7</td>
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Floor Structure</td>
-                  <td className="p-2">G + 35 Floors</td>
+                  <td className="p-2">23 + 29 to 42 Floors</td>
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Total Units</td>
-                  <td className="p-2">600+</td>
+                  <td className="p-2">977</td>
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Unit Types</td>
-                  <td className="p-2">2, 3 and 4 BHK</td>
+                  <td className="p-2">3 BHK, 4 BHK and Duplex 4 BHK</td>
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Starting Price</td>
-                  <td className="p-2">₹1.2 Crore*</td>
+                  <td className="p-2">₹2.66 Crore*</td>
                 </tr>
                 <tr>
                   <td className="p-2 font-semibold">Community Type</td>
@@ -256,8 +255,8 @@ export default function ProjectHighlights() {
                 High-Rise Towers with Modern Architecture
               </h3>
               <p>
-                At Sattva Aangane, there are four impressive residential towers
-                with contemporary designs. The towers go up to G+35 floors,
+                At Sattva Aangane, there are seven impressive residential towers
+                with contemporary designs. The towers go up to 42 floors,
                 giving residents an advanced towering living experience with
                 views of the surrounding areas.
               </p>
@@ -265,10 +264,10 @@ export default function ProjectHighlights() {
 
             <div>
               <h3 className="text-xl font-semibold mb-2">
-                600+ Premium Residential Units
+                977 Premium Residential Units
               </h3>
               <p>
-                There will be more than 600 flats in the building, each one
+                There will be 977 flats in the building, each one
                 carefully planned. This makes a lively closed community where
                 people can enjoy getting to know each other, using modern
                 services, and living in a safe area.
@@ -280,7 +279,7 @@ export default function ProjectHighlights() {
                 Multiple Apartment Configurations
               </h3>
               <p>
-                There are <b>2 BHK, 3 BHK, and 4 BHK flats in the project</b>,
+                There are <b>3 BHK, 4 BHK, and Duplex 4 BHK flats in the project</b>,
                 each built to meet the wants of a different family. The plan of
                 these homes is smart, and they have large living rooms,
                 bedrooms, and decks that let in natural light and air flow.
@@ -358,7 +357,7 @@ export default function ProjectHighlights() {
     <p>
       <strong>Sattva AANGANE</strong> is a big residential project that is going to be built in East Taluk, Bengaluru. It
       is being built by <a href="https://sattvagroup.com/" rel="nofollow"><strong>Sattva Resi Pvt Ltd</strong></a>, and the building contract was given to Starworth
-      Infrastructure &amp; Building Ltd (SICL), a division of Puravankara, for about <b>₹311.18 crore</b>. The
+      Infrastructure & Building Ltd (SICL), a division of Puravankara, for about <b>₹311.18 crore</b>. The
       project covers 3.04 million square feet and is expected to be completed over 37 months. Sattva
       Aangane wants to be a top notch living neighborhood that fits the needs of today&#39;s homes. This
       project blends large living areas with modern design and features that were all carefully chosen
@@ -387,7 +386,7 @@ export default function ProjectHighlights() {
     </p>
 
     <ul className="list-disc pl-6 space-y-2">
-      <li>4 high rise residential towers</li>
+      <li>7 high rise residential towers</li>
       <li>Landscaped open spaces</li>
       <li>Community activity areas</li>
       <li>Wide internal roads</li>
@@ -425,7 +424,7 @@ export default function ProjectHighlights() {
     </p>
 
     <p>
-      The building has four private towers that go up to G+35 floors. The towers have modern homes,
+      The building has seven private towers that go up to 42 floors. The towers have modern homes,
       living features, and green open areas. Within a gated community, the building is meant to offer
       easy city living while still keeping a peaceful atmosphere.
     </p>
@@ -476,7 +475,6 @@ export default function ProjectHighlights() {
     </p>
 
     <ul className="list-disc pl-6 space-y-2">
-      <li>2 BHK Apartments – ₹6 Lakhs</li>
       <li>3 BHK Apartments – ₹9 Lakhs</li>
       <li>4 BHK Apartments – ₹12 Lakhs</li>
     </ul>

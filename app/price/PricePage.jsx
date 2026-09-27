@@ -18,8 +18,8 @@ function PricePage() {
               The <a href="https://www.sattvaaangane.co/price"><b>Sattva Aangane Price</b></a> is designed to offer excellent value for
               homebuyers seeking premium apartments in <a href="https://en.wikipedia.org/wiki/Bangalore_East" rel="nofollow"><b>East Bangalore</b></a>. Located
               on <b>Old Madras Main Road near Budigere Cross</b>, the project offers
-              spacious <b>2, 3, and 4 BHK luxury apartments</b> with prices starting
-              from <b>₹ 1.2 Crore onwards</b>.
+              spacious <b>3 BHK, 4 BHK and Duplex 4 BHK luxury apartments</b> with prices starting
+              from <b>₹ 2.66 Crore onwards</b>.
             </p>
             <div className="flex justify-center items-center">
                 <img 
@@ -27,8 +27,8 @@ function PricePage() {
                 alt="Sattva Aangane" />
             </div>
             <p>
-              The development spans across <b>10+ acres</b> of land and features over
-              600 apartments across <b>4 high-rise towers with G + 35 floors.</b> The
+              The development spans across <b>10+ acres</b> of land and features
+              977 apartments across <b>7 high-rise towers with 23 to 42 floors.</b> The
               pricing structure is thoughtfully planned to provide buyers with a
               range of options depending on the apartment configuration, size,
               and floor level.
@@ -54,7 +54,7 @@ function PricePage() {
             <p>
               The project offers a variety of apartment configurations designed
               to suit different lifestyle needs and budgets. Buyers can choose
-              from well-planned <b>2 BHK, 3 BHK, and 4 BHK apartments</b>, each
+              from well-planned <b>3 BHK, 4 BHK, and Duplex 4 BHK apartments</b>, each
               offering spacious interiors and modern layouts.
             </p>
 
@@ -71,31 +71,19 @@ function PricePage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border p-3">2 BHK</td>
-                    <td className="border p-3">On Request</td>
-                    <td className="border p-3">₹ 1.2 Cr* Onwards</td>
-                  </tr>
-                  <tr>
                     <td className="border p-3">3 BHK</td>
-                    <td className="border p-3">On Request</td>
-                    <td className="border p-3">
-                        <button 
-                        className="cursor-pointer" 
-                        
-                        >Enquiry Open
-                        </button>
-                    </td>
+                    <td className="border p-3">1800 - 2300 sq. ft.</td>
+                    <td className="border p-3">₹ 2.66 Cr* Onwards</td>
                   </tr>
                   <tr>
                     <td className="border p-3">4 BHK</td>
-                    <td className="border p-3">On Request</td>
-                    <td className="border p-3">
-                        <button 
-                        className="cursor-pointer" 
-                        
-                        >Enquiry Open
-                        </button>
-                    </td>
+                    <td className="border p-3">2600 - 3000 sq. ft.</td>
+                    <td className="border p-3">₹ 3.44 Cr* Onwards</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-3">Duplex 4 BHK</td>
+                    <td className="border p-3">4700 - 5100 sq. ft.</td>
+                    <td className="border p-3">₹ 5.92 Cr* Onwards</td>
                   </tr>
                 </tbody>
               </table>
@@ -229,8 +217,8 @@ function PricePage() {
             <p>Key highlights include:</p>
 
             <ul className="list-disc pl-6 space-y-2">
-              <li>Premium 2, 3, and 4 BHK apartments</li>
-              <li>Prices starting from ₹1.2 Crore onwards</li>
+              <li>Premium 3 BHK, 4 BHK and Duplex 4 BHK apartments</li>
+              <li>Prices starting from ₹2.66 Crore onwards</li>
               <li>Located in the rapidly developing Budigere Cross corridor</li>
               <li>Modern high-rise towers with lifestyle amenities</li>
               <li>Attractive pricing for early investors</li>

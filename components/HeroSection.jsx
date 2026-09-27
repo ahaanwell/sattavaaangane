@@ -46,7 +46,7 @@ export default function HeroSection() {
               PRE LAUNCH
             </button>
             <button className="w-full bg-primary text-white font-bold py-3 rounded-lg mb-7 tracking-widest text-sm">
-              2, 3 & 4 BHK Apartment
+              3 & 4 BHK Apartment
             </button>
           </div>
 
@@ -58,17 +58,17 @@ export default function HeroSection() {
             </div>
             <div className="border lg:bg-white/10 lg:border-white/20 backdrop-blur-sm rounded-xl py-3 px-5 text-center">
               <p className="text-sm lg:text-white/70">Total Units</p>
-              <p className="text-xl font-extrabold">600+</p>
+              <p className="text-xl font-extrabold">977</p>
             </div>
           </div>
 
           {/* Price */}
           <p className="text-2xl lg:text-3xl font-extrabold mb-3 lg:bg-black/20 lg:px-4 lg:py-2 lg:inline-block rounded-md">
-            ₹ 1.2 Cr. Onwards
+            ₹ 2.66 Cr. Onwards
           </p>
 
           <p className="hidden lg:block text-xl font-bold mt-3 mb-7">
-            2, 3 & 4 BHK Apartment
+            3 & 4 BHK Apartment
           </p>
 
           {/* CTA Components */}

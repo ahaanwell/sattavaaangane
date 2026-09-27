@@ -69,7 +69,7 @@ while keeping green spaces and open spaces on the land.
         Structure
       </h3>
       <p>
-        Each private tower in Sattva Aangane is built with 35 floors above ground, giving residents
+        The private towers in Sattva Aangane are built with 23 to 42 floors above ground, giving residents
         modern high-rise living with stunning views of the area.
       </p>
     </div>
@@ -79,7 +79,7 @@ while keeping green spaces and open spaces on the land.
         Number of Towers
       </h3>
       <p>
-        The master plan calls for 4 private towers to be carefully placed in the layout so that the flats
+        The master plan calls for 7 private towers to be carefully placed in the layout so that the flats
         have good air flow, privacy, and natural light.
       </p>
     </div>
@@ -89,7 +89,7 @@ while keeping green spaces and open spaces on the land.
         Total Number of Apartments
       </h3>
       <p>
-        The project will have more than 600 living units, making a well-planned gated community with
+        The project will have 977 living units, making a well-planned gated community with
         modern services and infrastructure.
       </p>
     </div>
@@ -99,7 +99,7 @@ while keeping green spaces and open spaces on the land.
         Apartment Configurations
       </h3>
       <p>
-        The building has <b>2 BHK, 3 BHK, and 4 BHK flats</b>, each intended to meet the needs of a different
+        The building has <b>3 BHK, 4 BHK, and Duplex 4 BHK flats</b>, each intended to meet the needs of a different
         size family and way of life.
       </p>
     </div>

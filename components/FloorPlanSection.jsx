@@ -5,21 +5,21 @@ import FloorPlanClient from "./FloorPlanClient";
 const floorPlans = [
   {
     id: 1,
-    label: "2 BHK Floor Plan",
-    image: "./images/2-bhk-floorplan.webp",
-    alt: "2 BHK Floor Plan",
-  },
-  {
-    id: 2,
     label: "3 BHK Floor Plan",
-    image: "./images/3-bhk-floorplan.webp",
+    image: "./images/2-bhk-floorplan.webp",
     alt: "3 BHK Floor Plan",
   },
   {
-    id: 3,
+    id: 2,
     label: "4 BHK Floor Plan",
     image: "./images/3-bhk-floorplan.webp",
     alt: "4 BHK Floor Plan",
+  },
+  {
+    id: 3,
+    label: "Duplex Floor Plan",
+    image: "./images/3-bhk-floorplan.webp",
+    alt: "Duplex Floor Plan",
   },
 ];
 
@@ -77,32 +77,10 @@ possible.
   <div className="space-y-10 pt-6 text-gray-800">
 
     <div>
-      <h3 className="text-xl font-semibold mb-4">2 BHK Apartments</h3>
-
-      <p className="mb-4">
-        The <b>2 BHK apartments</b> are good for young couples and small families. Usually, these houses
-        have
-      </p>
-
-      <ul className="list-disc pl-6 space-y-2">
-        <li>Spacious living and dining area</li>
-        <li>Two comfortable bedrooms</li>
-        <li>Modern kitchen</li>
-        <li>Attached bathrooms</li>
-        <li>Private balcony</li>
-      </ul>
-
-      <p className="mt-4">
-        The plan makes sure that the people have a small but cosy place to live.
-      </p>
-    </div>
-
-
-    <div>
       <h3 className="text-xl font-semibold mb-4">3 BHK Apartments</h3>
 
       <p className="mb-4">
-        The <b>3 BHK homes</b> have more space and are made for families who need more room for daily
+        The <b>3 BHK homes (1800 - 2300 sq. ft.)</b> have more space and are made for families who need more room for daily
         tasks. Some features are
       </p>
 
@@ -124,7 +102,7 @@ possible.
       <h3 className="text-xl font-semibold mb-4">4 BHK Apartments</h3>
 
       <p className="mb-4">
-        The project's most luxurious units are the <b>4 BHK homes</b>, which are made for bigger families.
+        The <b>4 BHK homes (2600 - 3000 sq. ft.)</b> are made for bigger families.
         Key features include
       </p>
 
@@ -138,6 +116,28 @@ possible.
 
       <p className="mt-4">
         In a safe, gated neighbourhood, these houses offer an exceptional way to live.
+      </p>
+    </div>
+
+
+    <div>
+      <h3 className="text-xl font-semibold mb-4">Duplex 4 BHK Apartments</h3>
+
+      <p className="mb-4">
+        The project's most luxurious units are the <b>Duplex 4 BHK homes (4700 - 5100 sq. ft.)</b>, spread
+        across two levels for families who want the most space. Key features include
+      </p>
+
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Double-level living spaces</li>
+        <li>Four bedrooms with attached bathrooms</li>
+        <li>Large kitchen and dining areas</li>
+        <li>Premium interiors</li>
+        <li>Spacious balconies with open views</li>
+      </ul>
+
+      <p className="mt-4">
+        These homes offer villa-like space with the comfort of apartment living.
       </p>
     </div>
 

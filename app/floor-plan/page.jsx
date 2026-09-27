@@ -9,7 +9,7 @@ export const metadata = {
   },
 
   description:
-    "Explore the detailed floor plans of Sattva Aangane located on Old Madras Main Road, Budigere Cross, Bangalore. View well-designed 2 BHK, 3 BHK and 4 BHK apartment layouts with spacious rooms, modern architecture, and efficient living spaces.",
+    "Explore the detailed floor plans of Sattva Aangane located on Old Madras Main Road, Budigere Cross, Bangalore. View well-designed 3 BHK, 4 BHK and Duplex 4 BHK apartment layouts with spacious rooms, modern architecture, and efficient living spaces.",
 
   keywords: [
     "Sattva Aangane floor plan",
@@ -17,9 +17,9 @@ export const metadata = {
     "Sattva Aangane Budigere Cross floor plan",
     "Sattva Aangane apartment layout",
     "Sattva Aangane unit plan",
-    "Sattva Aangane 2 BHK floor plan",
     "Sattva Aangane 3 BHK floor plan",
     "Sattva Aangane 4 BHK floor plan",
+    "Sattva Aangane Duplex 4 BHK floor plan",
     "Sattva Aangane flat layout",
     "Sattva Aangane apartment design",
     "Budigere Cross apartment floor plan",
@@ -34,7 +34,7 @@ export const metadata = {
 
   openGraph: {
     title:
-      "Sattva Aangane Floor Plan | 2, 3 & 4 BHK Apartment Layouts",
+      "Sattva Aangane Floor Plan | 3, 4 BHK & Duplex Apartment Layouts",
     description:
       "View the spacious floor plans and apartment layouts of Sattva Aangane Bangalore featuring modern architecture and smart living spaces.",
     url: "https://www.sattvaaangane.co/floor-plan",
@@ -54,9 +54,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Sattva Aangane Floor Plan | 2, 3 & 4 BHK Apartment Layout",
+      "Sattva Aangane Floor Plan | 3, 4 BHK & Duplex Apartment Layout",
     description:
-      "Discover spacious and modern floor plans at Sattva Aangane Bangalore. View detailed apartment layouts for 2 BHK, 3 BHK and 4 BHK homes.",
+      "Discover spacious and modern floor plans at Sattva Aangane Bangalore. View detailed apartment layouts for 3 BHK, 4 BHK and Duplex 4 BHK homes.",
     images: [
       "https://www.sattvaaangane.co/images/floor-plan-banner.jpeg",
     ],
@@ -105,7 +105,7 @@ export default function page() {
         "@type": "Apartment",
         name: "Sattva Aangane Floor Plan",
         description:
-          "Detailed floor plans of Sattva Aangane apartments located in Budigere Cross Bangalore including 2 BHK, 3 BHK and 4 BHK layouts.",
+          "Detailed floor plans of Sattva Aangane apartments located in Budigere Cross Bangalore including 3 BHK, 4 BHK and Duplex 4 BHK layouts.",
         url: "https://www.sattvaaangane.co/floor-plan",
         image:
           "https://www.sattvaaangane.co/images/floor-plan-banner.webp",
@@ -118,7 +118,7 @@ export default function page() {
           addressCountry: "IN",
         },
 
-        numberOfRooms: "2,3,4",
+        numberOfRooms: "3,4",
         amenityFeature: [
           {
             "@type": "LocationFeatureSpecification",
@@ -146,7 +146,7 @@ export default function page() {
             name: "What apartment types are available in Sattva Aangane floor plan?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Sattva Aangane offers 2 BHK, 3 BHK and 4 BHK apartment floor plans designed for spacious and modern living.",
+              text: "Sattva Aangane offers 3 BHK, 4 BHK and Duplex 4 BHK apartment floor plans designed for spacious and modern living.",
             },
           },
           {

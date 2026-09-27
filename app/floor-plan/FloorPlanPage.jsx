@@ -15,11 +15,11 @@ function FloorPlanPage() {
           <DownloadActions/>
           <div className="space-y-6 mt-5 text-gray-800">
             <p>
-              The <b><a href="https://www.sattvaaangane.co/">Sattva Aangane</a> Floor Plan</b> presents thoughtfully designed <b>2, 3,
-              and 4 BHK luxury apartments</b> created for modern urban living. The
+              The <b><a href="https://www.sattvaaangane.co/">Sattva Aangane</a> Floor Plan</b> presents thoughtfully designed <b>3 BHK, 4 BHK
+              and Duplex 4 BHK luxury apartments</b> created for modern urban living. The
               project spreads across <b>10+ acres</b> of land on <a href="https://maps.app.goo.gl/eNuiU2qvVq6cxLAL6" rel="nofollow"><b>Old Madras Main Road,
-              East Bangalore</b></a>, and features over <b>600 premium homes across 4
-              high-rise towers with G + 35 floors</b>. Each apartment layout is
+              East Bangalore</b></a>, and features <b>977 premium homes across 7
+              high-rise towers with 23 to 42 floors</b>. Each apartment layout is
               carefully crafted to offer spacious interiors, natural
               ventilation, and smart space utilization.
             </p>
@@ -52,9 +52,9 @@ function FloorPlanPage() {
             </p>
 
             <ul className="list-disc pl-6 space-y-2">
-              <li>Sattva Aangane 2 BHK apartment floor plan</li>
               <li>Sattva Aangane 3 BHK apartment floor plan</li>
               <li>Sattva Aangane 4 BHK apartment floor plan</li>
+              <li>Sattva Aangane Duplex 4 BHK apartment floor plan</li>
             </ul>
 
             <p>
@@ -84,76 +84,25 @@ function FloorPlanPage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border p-3">2 BHK Apartments</td>
-                    <td className="border p-3">₹ 1.2 Cr* onwards</td>
-                  </tr>
-                  <tr>
                     <td className="border p-3">3 BHK Apartments</td>
-                    <td className="border p-3">
-                        <button 
-                        className="cursor-pointer" 
-                        
-                        >Enquiry Open
-                        </button>
-                    </td>
+                    <td className="border p-3">₹ 2.66 Cr* onwards</td>
                   </tr>
                   <tr>
                     <td className="border p-3">4 BHK Apartments</td>
-                    <td className="border p-3">
-                        <button 
-                        className="cursor-pointer" 
-                        >Enquiry Open
-                        </button>
-                    </td>
+                    <td className="border p-3">₹ 3.44 Cr* onwards</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-3">Duplex 4 BHK Apartments</td>
+                    <td className="border p-3">₹ 5.92 Cr* onwards</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
             <p>
-              The project offers modern apartments starting from <b>₹ 1.2 Cr
+              The project offers modern apartments starting from <b>₹ 2.66 Cr
               onwards</b>, making it a premium residential choice for families
               seeking spacious homes in a rapidly developing location.
-            </p>
-
-            <h3 className="text-2xl font-semibold mt-10">
-              Sattva Aangane 2 BHK Apartment Floor Plan
-            </h3>
-
-            <p>
-              The <b>2 BHK apartments</b> at Sattva Aangane are designed to offer a
-              perfect combination of comfort, practicality, and elegant living.
-              These homes are ideal for young professionals, couples, and small
-              families who want a well-organized living space with modern
-              amenities.
-            </p>
-
-            <div className="flex justify-center items-center">
-                <img 
-                className="w-full md:w-1/2"
-                src="/images/2-bhk-floorplan.webp" alt="2 BHK Floor Plan" />
-            </div>
-            <p>
-              The layout ensures that every room is designed for maximum
-              functionality while maintaining openness and natural ventilation.
-            </p>
-
-            <p>The 2 BHK floor plan includes:</p>
-
-            <ul className="list-disc pl-6 space-y-2">
-              <li>A welcoming foyer</li>
-              <li>Spacious living and dining area</li>
-              <li>2 comfortable bedrooms</li>
-              <li>2 modern bathrooms</li>
-              <li>A well-designed kitchen</li>
-              <li>Utility area attached to the kitchen</li>
-              <li>1 or 2 balconies for natural light and views</li>
-            </ul>
-
-            <p>
-              The living room connects smoothly to the balcony, creating a
-              bright and airy environment. Bedrooms are thoughtfully positioned
-              for privacy and relaxation.
             </p>
 
             <h3 className="text-2xl font-semibold mt-10">
@@ -161,7 +110,7 @@ function FloorPlanPage() {
             </h3>
 
             <p>
-              The <b>3 BHK apartments</b> at Sattva Aangane are spacious homes designed
+              The <b>3 BHK apartments (1800 - 2300 sq. ft.)</b> at Sattva Aangane are spacious homes designed
               for growing families who need extra room and comfort. These homes
               provide larger living areas and improved privacy between spaces.
             </p>
@@ -199,9 +148,8 @@ function FloorPlanPage() {
             </h3>
 
             <p>
-              The <b>4 BHK apartments</b> at Sattva Aangane represent the most
-              luxurious living option in the project. These homes are specially
-              designed for large families and buyers looking for expansive
+              The <b>4 BHK apartments (2600 - 3000 sq. ft.)</b> at Sattva Aangane
+              are specially designed for large families and buyers looking for expansive
               luxury spaces.
             </p>
 
@@ -232,6 +180,28 @@ function FloorPlanPage() {
               These premium homes offer generous space, better privacy, and a
               sophisticated layout suitable for modern lifestyles.
             </p>
+
+            <h3 className="text-2xl font-semibold mt-10">
+              Sattva Aangane Duplex 4 BHK Apartment Floor Plan
+            </h3>
+
+            <p>
+              The <b>Duplex 4 BHK apartments (4700 - 5100 sq. ft.)</b> at Sattva
+              Aangane represent the most luxurious living option in the project.
+              Spread across two levels, these homes offer villa-like space for
+              buyers looking for the largest and most exclusive residences.
+            </p>
+
+            <p>Each Duplex 4 BHK apartment floor plan includes:</p>
+
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Double-level living with internal staircase</li>
+              <li>Expansive living and dining areas</li>
+              <li>4 large bedrooms</li>
+              <li>Modern bathrooms attached to bedrooms</li>
+              <li>Spacious kitchen with utility area</li>
+              <li>Multiple wide balconies</li>
+            </ul>
 
             <h3 className="text-2xl font-semibold mt-10">
               Sattva Aangane Floor Plan Design Highlights
@@ -316,8 +286,8 @@ function FloorPlanPage() {
                   Aangane floor plan?
                 </h3>
                 <p>
-                  The Sattva Aangane Floor Plan offers well-designed 2 BHK, 3
-                  BHK, and 4 BHK luxury apartments. These homes are planned with
+                  The Sattva Aangane Floor Plan offers well-designed 3 BHK, 4
+                  BHK, and Duplex 4 BHK luxury apartments. These homes are planned with
                   spacious interiors, modern kitchens, comfortable bedrooms, and
                   wide balconies that provide natural ventilation and sunlight.
                 </p>
@@ -328,8 +298,8 @@ function FloorPlanPage() {
                   2. How many towers are included in the Sattva Aangane project?
                 </h3>
                 <p>
-                  Sattva Aangane features 4 premium residential towers, each
-                  rising up to G + 35 floors. The towers are carefully planned
+                  Sattva Aangane features 7 premium residential towers,
+                  ranging from 23 to 42 floors. The towers are carefully planned
                   to provide open spaces, better airflow, and scenic views for
                   residents.
                 </p>
@@ -353,7 +323,7 @@ function FloorPlanPage() {
                 </h3>
                 <p>
                   The apartments at Sattva Aangane Bangalore are expected to
-                  start from ₹1.2 Crore onwards, depending on the apartment
+                  start from ₹2.66 Crore onwards, depending on the apartment
                   size, floor level, and configuration selected by the buyer.
                 </p>
               </div>
@@ -363,7 +333,7 @@ function FloorPlanPage() {
                   5. How many total units are available in Sattva Aangane?
                 </h3>
                 <p>
-                  Sattva Aangane will include more than 600 premium apartments
+                  Sattva Aangane will include 977 premium apartments
                   across its high-rise towers, making it a large residential
                   community designed for comfortable and modern living.
                 </p>

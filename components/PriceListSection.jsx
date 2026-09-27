@@ -2,9 +2,9 @@ import EMICalculator from "./Emicalculator";
 import DownloadCostSheetActions from "./DownloadCostSheetActions";
 
 const priceData = [
-  { type: "2 BHK",        size: "On Request",    price: "₹ 1.2 Cr* onwards" },
-  { type: "3 BHK",        size: "On Request",  price: "Price On Request" },
-  { type: "4 BHK",  size: "On Request",  price: "Price On Request" },
+  { type: "3 BHK",        size: "1800 - 2300 sq. ft.",    price: "₹ 2.66 Cr* onwards" },
+  { type: "4 BHK",        size: "2600 - 3000 sq. ft",  price: "₹ 3.44 Cr* onwards" },
+  { type: "Duplex 4 BHK",  size: "4700 - 5100 sq. ft",  price: "₹ 5.92 Cr* onwards" },
 ];
 
 export default function PriceListSection() {
@@ -81,7 +81,7 @@ export default function PriceListSection() {
 
     <p>
       <strong>Sattva Aangane</strong> has a range of modern, large flats that are made to fit the wants of different
-      buyers. There are <b>2 BHK, 3 BHK, and 4 BHK homes</b> in the building. Each one was carefully
+      buyers. There are <b>3 BHK, 4 BHK, and Duplex 4 BHK homes</b> in the building. Each one was carefully
       designed to have modern interiors, good ventilation, and comfy living areas. The plans of these
       homes are useful, making the most of the room that can be used while still providing privacy
       and functionality.
@@ -89,13 +89,13 @@ export default function PriceListSection() {
 
     <p>
       The project will be an advanced private residential tower located at <b>Budigere Cross on Old
-      Madras Main Road</b>. With four towers that go up to <b>G+35 floors</b>, the flats have great views of
+      Madras Main Road</b>. With seven towers that go up to <b>42 floors</b>, the flats have great views of
       the city and planted green areas. The apartments are made so that they can fit both small
       families and bigger families who want more space to live.
     </p>
 
     <p>
-      Apartments at Sattva Aangane start at about <a href="https://www.sattvaaangane.co/price"><b>₹ 1.2 Crore</b></a>, which makes it a good choice for
+      Apartments at Sattva Aangane start at about <a href="https://www.sattvaaangane.co/price"><b>₹ 2.66 Crore</b></a>, which makes it a good choice for
       people in East Bangalore who want to buy modern houses. Prices may change based on
       things like the size of the flat, its floor level, its location in the tower, and the way it faces. The
       project offers a range of unit sizes so that buyers can find homes that meet their needs for
@@ -103,9 +103,10 @@ export default function PriceListSection() {
     </p>
 
     <p>
-      The <b>2 BHK homes</b> are great for workers and small families, while the <b>3 BHK flats</b> have more
-      room for families to live comfortably. The <b>4 BHK apartments</b> are the largest in the building and
-      are made for people who want bigger <b>luxury homes</b>. These apartment choices give buyers the
+      The <b>3 BHK flats (1800 - 2300 sq. ft.)</b> give families room to live comfortably, while the
+      <b> 4 BHK apartments (2600 - 3000 sq. ft.)</b> offer even more space for bigger families. The
+      <b> Duplex 4 BHK homes (4700 - 5100 sq. ft.)</b> are the largest in the building and are made for
+      people who want bigger <b>luxury homes</b>. These apartment choices give buyers the
       freedom to choose houses that fit their price and way of life. <b>Sattva Aangane</b> aims to provide a
       peaceful and premium living experience in East Bangalore through its large floor plans,
       modern design, and excellent location.

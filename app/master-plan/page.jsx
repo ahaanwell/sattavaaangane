@@ -104,7 +104,7 @@ export default function page() {
         "@type": "ApartmentComplex",
         name: "Sattva Aangane Master Plan",
         description:
-          "Master plan of Sattva Aangane residential project in Budigere Cross Bangalore featuring 4 towers, landscaped gardens, modern amenities and planned open spaces.",
+          "Master plan of Sattva Aangane residential project in Budigere Cross Bangalore featuring 7 towers, landscaped gardens, modern amenities and planned open spaces.",
         url: "https://www.sattvaaangane.co/master-plan",
         image:
           "https://www.sattvaaangane.co/images/master-plan-banner.webp",
@@ -117,7 +117,7 @@ export default function page() {
           addressCountry: "IN"
         },
 
-        numberOfAccommodationUnits: "600+",
+        numberOfAccommodationUnits: "977",
 
         amenityFeature: [
           {
@@ -159,7 +159,7 @@ export default function page() {
             name: "How many towers are included in Sattva Aangane master plan?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The master plan of Sattva Aangane includes 4 residential towers with G+35 floors."
+              text: "The master plan of Sattva Aangane includes 7 residential towers with 23 to 42 floors."
             }
           },
           {

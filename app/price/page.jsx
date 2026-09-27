@@ -17,7 +17,7 @@ export const metadata = {
     "Sattva Aangane apartment price",
     "Sattva Aangane Budigere Cross price",
     "Sattva Aangane price list",
-    "Sattva Aangane 2 BHK price",
+    "Sattva Aangane Duplex 4 BHK price",
     "Sattva Aangane 3 BHK price",
     "Sattva Aangane 4 BHK price",
     "Sattva Aangane cost",
@@ -34,7 +34,7 @@ export const metadata = {
 
   openGraph: {
     title:
-      "Sattva Aangane Price | 2, 3 & 4 BHK Apartment Price List Bangalore",
+      "Sattva Aangane Price | 3, 4 BHK & Duplex Apartment Price List Bangalore",
     description:
       "Explore the latest price list of Sattva Aangane apartments in Budigere Cross Bangalore including configuration wise pricing and payment plans.",
     url: "https://www.sattvaaangane.co/price",
@@ -56,7 +56,7 @@ export const metadata = {
     title:
       "Sattva Aangane Price | Apartment Price List Budigere Cross",
     description:
-      "View the latest price list of Sattva Aangane Bangalore including 2, 3 and 4 BHK apartment pricing and payment plans.",
+      "View the latest price list of Sattva Aangane Bangalore including 3 BHK, 4 BHK and Duplex 4 BHK apartment pricing and payment plans.",
     images: ["https://www.sattvaaangane.co/images/sattvaaangane.webp"],
   },
 
@@ -104,7 +104,7 @@ export default function Page() {
         "@type": "ApartmentComplex",
         name: "Sattva Aangane",
         description:
-          "Sattva Aangane is a premium residential apartment project located at Budigere Cross, Old Madras Main Road Bangalore offering luxury 2, 3 and 4 BHK apartments with modern amenities.",
+          "Sattva Aangane is a premium residential apartment project located at Budigere Cross, Old Madras Main Road Bangalore offering luxury 3 BHK, 4 BHK and Duplex 4 BHK apartments with modern amenities.",
         url: "https://www.sattvaaangane.co/price",
         image: "https://www.sattvaaangane.co/images/sattvaaangane.webp",
 
@@ -119,7 +119,7 @@ export default function Page() {
         offers: {
           "@type": "Offer",
           priceCurrency: "INR",
-          price: "On Request",
+          price: "26600000",
           availability: "https://schema.org/PreOrder",
           url: "https://www.sattvaaangane.co/price"
         }
@@ -133,7 +133,7 @@ export default function Page() {
             name: "What is the starting price of Sattva Aangane apartments?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The starting price of Sattva Aangane apartments depends on the configuration such as 2 BHK, 3 BHK and 4 BHK units. For the latest price list and offers you can request the updated pricing details."
+              text: "The starting price of Sattva Aangane apartments starts from ₹2.66 Crore for 3 BHK, ₹3.44 Crore for 4 BHK and ₹5.92 Crore for Duplex 4 BHK units. For the latest price list and offers you can request the updated pricing details."
             }
           },
           {
