@@ -167,10 +167,10 @@ export default function SattvaProjects() {
                 <tbody>
                   {specRows.map((row) => (
                     <tr key={row.key}>
-                      <td className="py-1 font-semibold text-gray-600 w-40">
+                      <td className="py-1 pr-3 align-top font-semibold text-gray-600 w-28 sm:w-40">
                         {row.label}
                       </td>
-                      <td className="py-1 text-gray-800">
+                      <td className="py-1 align-top text-gray-800 wrap-anywhere">
                         {p[row.key]}
                       </td>
                     </tr>
