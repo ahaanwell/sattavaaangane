@@ -33,7 +33,7 @@ export default function FaqSection() {
               2. What Types of units are there in the project?
             </h3>
             <p className="text-gray-600 mt-1">
-              The project has 3 BHK, 4 BHK, and Duplex 4 BHK units.
+              The project has 3 BHK, 4 BHK, and Duplex 5 BHK units.
             </p>
           </div>
 

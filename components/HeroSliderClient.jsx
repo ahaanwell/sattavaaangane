@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 const slides = [
   "./images/sattvaaangane.webp",
-  "./images/sattvaaangane.webp",
-  "./images/sattvaaangane.webp",
+  "./images/sattva-angane.webp",
+  "./images/sattva-aangane.webp",
 ];
 
 export default function HeroSliderClient({ className }) {

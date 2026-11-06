@@ -27,7 +27,7 @@ const highlights = [
   {
     icon: <MdApartment className="text-3xl text-primary" />,
     label: "Unit Type",
-    value: "3, 4 BHK + Duplex",
+    value: "3, 4 & 5 BHK Duplex",
   },
   {
     icon: <FaVectorSquare className="text-3xl text-primary" />,
@@ -42,7 +42,7 @@ const highlights = [
   {
     icon: <FaLayerGroup className="text-3xl text-primary" />,
     label: "Land Area",
-    value: "10+ Acres",
+    value: "10.3 Acres",
   },
   {
     icon: <FaCity className="text-3xl text-primary" />,
@@ -52,12 +52,12 @@ const highlights = [
   {
     icon: <FaBuilding className="text-3xl text-primary" />,
     label: "Total No. of Floors",
-    value: "23 + 29 to 42 Floors",
+    value: "23 + 29 to 42 floors",
   },
   {
     icon: <FaBuilding className="text-3xl text-primary" />,
     label: "No Of Towers",
-    value: "7",
+    value: "7 Towers",
   },
   {
     icon: <FaHelmetSafety className="text-3xl text-primary" />,
@@ -67,12 +67,12 @@ const highlights = [
   {
     icon: <FaCertificate className="text-3xl text-primary" />,
     label: "Rera No",
-    value: "Coming Soon",
+    value: "PR/180926/008944",
   },
   {
     icon: <FaCalendarDay className="text-3xl text-primary" />,
     label: "Possession",
-    value: "Coming Soon",
+    value: "September 2032",
   },
 ];
 
@@ -135,14 +135,14 @@ export default function ProjectHighlights() {
               contemporary lifestyle features.
             </p>
             <p>
-              The project covers more than <b>10 acres</b> of land and has
+              The project covers <b>10.3 acres</b> of land and has
               planned apartment buildings bordered by planted green areas and
               trees. The building includes seven high rise towers ranging from
-              <b> 23 to 42 floors</b>. It offers amazing views of the city and a
+              <b> 23 + 29 to 42 floors</b>. It offers amazing views of the city and a
               peaceful place to live in a neighborhood that is growing.
             </p>
             <p>
-              The building has <b>3 BHK, 4 BHK, and Duplex 4 BHK homes</b> from <b>1800 to 5100 sq. ft.</b>, so it can
+              The building has <b>3 BHK, 4 BHK, and Duplex 5 BHK homes</b> from <b>1800 to 5100 sq. ft.</b>, so it can
               fit the needs of a wide range of customers, such as young workers,
               families and businessmen. Each home is designed with attention to
               detail, efficient layouts and modern architecture that supports
@@ -189,7 +189,7 @@ export default function ProjectHighlights() {
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Land Area</td>
-                  <td className="p-2">10+ Acres</td>
+                  <td className="p-2">10.3 Acres</td>
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Total Towers</td>
@@ -197,7 +197,7 @@ export default function ProjectHighlights() {
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Floor Structure</td>
-                  <td className="p-2">23 + 29 to 42 Floors</td>
+                  <td className="p-2">23 + 29 to 42 floors</td>
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Total Units</td>
@@ -205,15 +205,23 @@ export default function ProjectHighlights() {
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Unit Types</td>
-                  <td className="p-2">3 BHK, 4 BHK and Duplex 4 BHK</td>
+                  <td className="p-2">3 BHK, 4 BHK and 5 BHK Duplex</td>
                 </tr>
                 <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Starting Price</td>
                   <td className="p-2">₹2.66 Crore*</td>
                 </tr>
-                <tr>
+                <tr className="border-b border-gray-400">
                   <td className="p-2 font-semibold">Community Type</td>
                   <td className="p-2">Gated Residential Development</td>
+                </tr>
+                  <tr className="border-b border-gray-400">
+                  <td className="p-2 font-semibold">RERA Status</td>
+                  <td className="p-2">Approved</td>
+                </tr>
+                <tr className="border-b border-gray-400">
+                  <td className="p-2 font-semibold">RERA Number</td>
+                  <td className="p-2">PRM/KA/RERA/1251/446/PR/180926/008944</td>
                 </tr>
               </tbody>
             </table>
@@ -240,10 +248,10 @@ export default function ProjectHighlights() {
 
             <div>
               <h3 className="text-xl font-semibold mb-2">
-                Large Township Spread Across 10+ Acres.
+                10.3-Acre Township.
               </h3>
               <p>
-                The project covers more than 10 acres of beautiful land, so
+                The project covers 10.3 acres of land, so
                 there are lots of open areas and a well designed place to live.
                 As the land is so big, the building can have planted parks, play
                 areas, and wide roads inside the community.
@@ -256,7 +264,7 @@ export default function ProjectHighlights() {
               </h3>
               <p>
                 At Sattva Aangane, there are seven impressive residential towers
-                with contemporary designs. The towers go up to 42 floors,
+                with contemporary designs and 23 + 29 to 42 floors,
                 giving residents an advanced towering living experience with
                 views of the surrounding areas.
               </p>
@@ -279,7 +287,7 @@ export default function ProjectHighlights() {
                 Multiple Apartment Configurations
               </h3>
               <p>
-                There are <b>3 BHK, 4 BHK, and Duplex 4 BHK flats in the project</b>,
+                There are <b>3 BHK, 4 BHK, and Duplex 5 BHK flats in the project</b>,
                 each built to meet the wants of a different family. The plan of
                 these homes is smart, and they have large living rooms,
                 bedrooms, and decks that let in natural light and air flow.
@@ -413,7 +421,7 @@ export default function ProjectHighlights() {
     <p>
       One of the best things about Sattva Aangane is its thoughtfully planned layout and luxurious
       residential tower design. Real estate agents and people who want to buy homes are excited
-      about this new development, which will cover more than 10 acres at Budigere Cross on Old
+      about this new development, which covers 10.3 acres at Budigere Cross on Old
       Madras Main Road.
     </p>
 
@@ -424,7 +432,7 @@ export default function ProjectHighlights() {
     </p>
 
     <p>
-      The building has seven private towers that go up to 42 floors. The towers have modern homes,
+      The building has seven private towers with 23 + 29 to 42 floors. The towers have modern homes,
       living features, and green open areas. Within a gated community, the building is meant to offer
       easy city living while still keeping a peaceful atmosphere.
     </p>
@@ -444,17 +452,10 @@ export default function ProjectHighlights() {
   <div className="space-y-6">
 
     <p>
-      It is now time for Sattva Aangane&#39;s RERA application to be approved. The Karnataka Real
-      Estate Regulatory Authority will give the project its official registration number once it has been
-      given the go-ahead. Before the official start, the creator made sure that all the required rights
-      and approvals were obtained from the correct authorities and government offices.
+      Sattva Aangane has received official registration approval from the Karnataka Real Estate Regulatory Authority (K-RERA). The project is registered under RERA Registration Number <b>PRM/KA/RERA/1251/446/PR/180926/008944</b>, with approval granted on <b>18 September 2026</b>.
     </p>
-
     <p>
-      These permissions include building permits, planning rights, and other legal clearances needed
-      for building homes in the area. As soon as the RERA approval is given, buyers will be able to
-      see all the official information about the development, such as layout plans, timelines, and other
-      project details.
+      With the RERA registration now approved, the project has received the necessary regulatory clearance to proceed in accordance with applicable RERA guidelines. Homebuyers can refer to the official RERA registration details to verify the project's registration status and access relevant information, including approved project plans, development details, construction timelines and other statutory disclosures.
     </p>
 
   </div>

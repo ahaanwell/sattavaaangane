@@ -39,7 +39,7 @@ export const metadata = {
     siteName: "Sattva Aangane",
     images: [
       {
-        url: "https://www.sattvaaangane.co/images/amenities.jpeg",
+        url: "https://www.sattvaaangane.co/images/amenities.webp",
         width: 1200,
         height: 630,
         alt: "Sattva Aangane Amenities",
@@ -56,7 +56,7 @@ export const metadata = {
     description:
       "Explore modern amenities at Sattva Aangane including clubhouse, gym, sports courts and landscaped gardens.",
     images: [
-      "https://www.sattvaaangane.co/images/amenities.jpeg"
+      "https://www.sattvaaangane.co/images/amenities.webp"
     ],
   },
 
@@ -106,7 +106,7 @@ export default function page() {
         description:
           "Sattva Aangane offers modern lifestyle amenities including clubhouse, swimming pool, landscaped gardens, fitness center, sports courts and kids play area in East Bangalore.",
         url: "https://www.sattvaaangane.co/amenities",
-        image: "https://www.sattvaaangane.co/images/amenities.jpeg",
+        image: "https://www.sattvaaangane.co/images/amenities.webp",
 
         address: {
           "@type": "PostalAddress",

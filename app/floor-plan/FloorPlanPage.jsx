@@ -16,10 +16,10 @@ function FloorPlanPage() {
           <div className="space-y-6 mt-5 text-gray-800">
             <p>
               The <b><a href="https://www.sattvaaangane.co/">Sattva Aangane</a> Floor Plan</b> presents thoughtfully designed <b>3 BHK, 4 BHK
-              and Duplex 4 BHK luxury apartments</b> created for modern urban living. The
-              project spreads across <b>10+ acres</b> of land on <a href="https://maps.app.goo.gl/eNuiU2qvVq6cxLAL6" rel="nofollow"><b>Old Madras Main Road,
+              and Duplex 5 BHK luxury apartments</b> created for modern urban living. The
+              project spreads across <b>10.3 acres</b> of land on <a href="https://maps.app.goo.gl/eNuiU2qvVq6cxLAL6" rel="nofollow"><b>Old Madras Main Road,
               East Bangalore</b></a>, and features <b>977 premium homes across 7
-              high-rise towers with 23 to 42 floors</b>. Each apartment layout is
+              high-rise towers with 23 + 29 to 42 floors</b>. Each apartment layout is
               carefully crafted to offer spacious interiors, natural
               ventilation, and smart space utilization.
             </p>
@@ -54,7 +54,7 @@ function FloorPlanPage() {
             <ul className="list-disc pl-6 space-y-2">
               <li>Sattva Aangane 3 BHK apartment floor plan</li>
               <li>Sattva Aangane 4 BHK apartment floor plan</li>
-              <li>Sattva Aangane Duplex 4 BHK apartment floor plan</li>
+              <li>Sattva Aangane Duplex 5 BHK apartment floor plan</li>
             </ul>
 
             <p>
@@ -92,7 +92,7 @@ function FloorPlanPage() {
                     <td className="border p-3">₹ 3.44 Cr* onwards</td>
                   </tr>
                   <tr>
-                    <td className="border p-3">Duplex 4 BHK Apartments</td>
+                    <td className="border p-3">Duplex 5 BHK Apartments</td>
                     <td className="border p-3">₹ 5.92 Cr* onwards</td>
                   </tr>
                 </tbody>
@@ -182,22 +182,22 @@ function FloorPlanPage() {
             </p>
 
             <h3 className="text-2xl font-semibold mt-10">
-              Sattva Aangane Duplex 4 BHK Apartment Floor Plan
+              Sattva Aangane Duplex 5 BHK Apartment Floor Plan
             </h3>
 
             <p>
-              The <b>Duplex 4 BHK apartments (4700 - 5100 sq. ft.)</b> at Sattva
+              The <b>Duplex 5 BHK apartments (4700 - 5100 sq. ft.)</b> at Sattva
               Aangane represent the most luxurious living option in the project.
               Spread across two levels, these homes offer villa-like space for
               buyers looking for the largest and most exclusive residences.
             </p>
 
-            <p>Each Duplex 4 BHK apartment floor plan includes:</p>
+            <p>Each Duplex 5 BHK apartment floor plan includes:</p>
 
             <ul className="list-disc pl-6 space-y-2">
               <li>Double-level living with internal staircase</li>
               <li>Expansive living and dining areas</li>
-              <li>4 large bedrooms</li>
+              <li>5 large bedrooms</li>
               <li>Modern bathrooms attached to bedrooms</li>
               <li>Spacious kitchen with utility area</li>
               <li>Multiple wide balconies</li>
@@ -287,7 +287,7 @@ function FloorPlanPage() {
                 </h3>
                 <p>
                   The Sattva Aangane Floor Plan offers well-designed 3 BHK, 4
-                  BHK, and Duplex 4 BHK luxury apartments. These homes are planned with
+                  BHK, and Duplex 5 BHK luxury apartments. These homes are planned with
                   spacious interiors, modern kitchens, comfortable bedrooms, and
                   wide balconies that provide natural ventilation and sunlight.
                 </p>
@@ -299,7 +299,7 @@ function FloorPlanPage() {
                 </h3>
                 <p>
                   Sattva Aangane features 7 premium residential towers,
-                  ranging from 23 to 42 floors. The towers are carefully planned
+                  with 23 + 29 to 42 floors. The towers are carefully planned
                   to provide open spaces, better airflow, and scenic views for
                   residents.
                 </p>
@@ -310,7 +310,7 @@ function FloorPlanPage() {
                   3. What is the total land area of the Sattva Aangane project?
                 </h3>
                 <p>
-                  The project is spread across 10+ acres of prime land on Old
+                  The project is spread across 10.3 acres of prime land on Old
                   Madras Main Road in East Bangalore, offering a well-planned
                   residential community with landscaped open spaces and modern
                   amenities.

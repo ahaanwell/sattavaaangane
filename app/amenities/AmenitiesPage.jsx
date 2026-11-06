@@ -20,13 +20,13 @@ function AmenitiesPage() {
               with a modern lifestyle that combines comfort, wellness,
               recreation, and social engagement. Located on <b>Old Madras Main Road
               near Budigere Cross in East Bangalore</b>, the project spreads across
-              <b> 10+ acres</b> of land and offers a wide range of thoughtfully planned
+              <b> 10.3 acres</b> of land and offers a wide range of thoughtfully planned
               facilities for people of all age groups.
             </p>
 
             <p>
               The development includes <b>977 premium apartments</b> across <b>7
-              high-rise towers</b> with <b>23 to 42 floors</b>, and the amenities are
+              high-rise towers</b> with <b>23 + 29 to 42 floors</b>, and the amenities are
               carefully distributed throughout the property to ensure easy
               accessibility for residents. These features create a vibrant
               community environment where families can relax, exercise,
@@ -47,7 +47,7 @@ function AmenitiesPage() {
 
             <div className="flex justify-center items-center">
                 <img 
-                src="/images/amenities.jpeg"
+                src="/images/amenities.webp"
                 loading="lazy" 
                 alt="Sattva Aangane Lifestyle Amenities" />
             </div>

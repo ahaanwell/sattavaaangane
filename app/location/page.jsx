@@ -39,7 +39,7 @@ export const metadata = {
     siteName: "Sattva Aangane",
     images: [
       {
-        url: "https://www.sattvaaangane.co/images/location-banner.png",
+        url: "https://www.sattvaaangane.co/images/location-map.webp",
         width: 1200,
         height: 630,
         alt: "Sattva Aangane Location Map Budigere Cross",
@@ -55,7 +55,7 @@ export const metadata = {
       "Sattva Aangane Location | Budigere Cross Connectivity",
     description:
       "View the location map and connectivity advantages of Sattva Aangane Bangalore near Whitefield and Old Madras Road.",
-    images: ["https://www.sattvaaangane.co/images/location-banner.png"],
+    images: ["https://www.sattvaaangane.co/images/location-map.webp"],
   },
 
   robots: {
@@ -104,7 +104,7 @@ export default function page() {
         description:
           "Sattva Aangane is a premium residential apartment project located on Old Madras Main Road near Budigere Cross in East Bangalore with excellent connectivity to Whitefield, KR Puram and Kempegowda International Airport.",
         url: "https://www.sattvaaangane.co/location",
-        image: "https://www.sattvaaangane.co/images/location-banner.png",
+        image: "https://www.sattvaaangane.co/images/location-map.webp",
 
         address: {
           "@type": "PostalAddress",

@@ -27,8 +27,8 @@ function PricePage() {
                 alt="Sattva Aangane" />
             </div>
             <p>
-              The development spans across <b>10+ acres</b> of land and features
-              977 apartments across <b>7 high-rise towers with 23 to 42 floors.</b> The
+              The development spans across <b>10.3 acres</b> of land and features
+              977 apartments across <b>7 high-rise towers with 23 + 29 to 42 floors.</b> The
               pricing structure is thoughtfully planned to provide buyers with a
               range of options depending on the apartment configuration, size,
               and floor level.

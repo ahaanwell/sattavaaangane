@@ -16,16 +16,18 @@ function MasterPlanPage() {
           <div className="space-y-6 text-gray-800 mt-5">
             <p>
               The <b><a href="">Sattva Aangane</a> Master Plan</b> showcases a thoughtfully designed
-              residential community developed across <b>10+ acres</b> of prime land on
+              residential community developed across <b>10.3 acres</b> of prime land on
               <a href="https://maps.app.goo.gl/e5q7mhcSqE3fgFY7A" rel="nofollow"><b> Old Madras Main Road near Budigere Cross, East Bangalore.</b></a> The
-              project consists of 7 elegant high-rise towers with <b>23 to 42 floors </b>
-              and offers <b>977 premium apartments</b> in <b>3 BHK, 4 BHK and Duplex 4 BHK
+              project consists of 7 elegant high-rise towers with <b>23 + 29 to 42 floors </b>
+              and offers <b>977 premium apartments</b> in <b>3 BHK, 4 BHK and Duplex 5 BHK
               configurations.</b>
             </p>
             <div className="flex justify-center items-center">
                 <img 
-                src="/images/master-plan-banner.jpeg" 
-                alt="Sattva Aangane Master Plan" />
+                src="/images/master-plan.webp" 
+                alt="Sattva Aangane Master Plan"
+                title="Sattva Aangane Master Plan"
+                 />
             </div>
             <p>
               The master plan is designed to create a balanced environment that
@@ -230,7 +232,7 @@ function MasterPlanPage() {
             <p>Key highlights include:</p>
 
             <ul className="list-disc pl-6 space-y-2">
-              <li>Large 10+ acre residential township</li>
+              <li>10.3-acre residential township</li>
               <li>4 modern high-rise towers with premium apartments</li>
               <li>Spacious community planning with green areas</li>
               <li>World-class lifestyle amenities</li>

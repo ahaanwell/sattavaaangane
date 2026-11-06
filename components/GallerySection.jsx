@@ -4,14 +4,15 @@ import { useState } from "react";
 import { FaTimes, FaChevronLeft, FaChevronRight, FaExpand } from "react-icons/fa";
 
 const galleryImages = [
-  { id: 1,  src: "./images/gallery-1.webp",  alt: "gallery 1" },
+  { id: 0,  src: "./images/sattva-aangane.webp",  alt: "gallery 0" },
+  { id: 1,  src: "./images/sattva-angane.webp",  alt: "gallery 1" },
   { id: 2,  src: "./images/gallery-2.webp",  alt: "gallery 2" },
   { id: 3,  src: "./images/gallery-3.webp",  alt: "gallery 3" },
-  { id: 4,  src: "./images/gallery-4.webp",  alt: "gallery 4" },
+  { id: 4,  src: "./images/amenities.webp",  alt: "amenities" },
   { id: 5,  src: "./images/gallery-5.webp",  alt: "gallery 5" },
   { id: 6,  src: "./images/gallery-6.webp",  alt: "gallery 6" },
   { id: 7,  src: "./images/gallery-7.webp",  alt: "gallery 7" },
-  { id: 8,  src: "./images/gallery-8.webp",  alt: "gallery 8" },
+  // { id: 8,  src: "./images/gallery-8.webp",  alt: "gallery 8" },
   { id: 9,  src: "./images/gallery-9.webp",  alt: "gallery 9" },
   { id: 10, src: "./images/gallery-10.webp", alt: "gallery 10" },
 ];

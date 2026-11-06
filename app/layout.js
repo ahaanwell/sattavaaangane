@@ -26,7 +26,7 @@ export const metadata = {
   },
 
   description:
-    "Sattva Aangane a new launch premium apartment project in Old Madras Road near Budigere Cross, Bangalore. Covers 10 acres of land, it offers 3 BHK, 4 BHK and Duplex 4 BHK apartments over 7 high-rise towers.",
+    "Sattva Aangane a new launch premium apartment project in Old Madras Road near Budigere Cross, Bangalore. Covers 10.3 acres of land, it offers 3 BHK, 4 BHK and Duplex 5 BHK apartments over 7 high-rise towers.",
 
   keywords: [
     "Sattva Aangane",
@@ -42,7 +42,7 @@ export const metadata = {
     "Sattva Group projects Bangalore",
     "3 BHK apartments Budigere Cross",
     "4 BHK apartments Budigere Cross",
-    "Duplex 4 BHK apartments Budigere Cross",
+    "Duplex 5 BHK apartments Budigere Cross",
   ],
 
   metadataBase: new URL("https://www.sattvaaangane.co"),
@@ -75,7 +75,7 @@ export const metadata = {
     title:
       "Sattva Aangane Bangalore | Luxury Apartments Budigere Cross",
     description:
-      "Explore Sattva Aangane apartments in Budigere Cross Bangalore offering premium 3 BHK, 4 BHK and Duplex 4 BHK homes with world class amenities.",
+      "Explore Sattva Aangane apartments in Budigere Cross Bangalore offering premium 3 BHK, 4 BHK and Duplex 5 BHK homes with world class amenities.",
     images: [
       "https://www.sattvaaangane.co/images/sattvaaangane.webp",
     ],
@@ -130,7 +130,7 @@ export default function RootLayout({ children }) {
         "@type": "ApartmentComplex",
         name: "Sattva Aangane",
         description:
-          "Sattva Aangane is a luxury residential gated community located on Old Madras Main Road, Budigere Cross, Bangalore offering premium 3 BHK, 4 BHK and Duplex 4 BHK apartments.",
+          "Sattva Aangane is a luxury residential gated community located on Old Madras Main Road, Budigere Cross, Bangalore offering premium 3 BHK, 4 BHK and Duplex 5 BHK apartments.",
         url: "https://www.sattvaaangane.co/",
         image:
           "https://www.sattvaaangane.co/images/sattvaaangane.webp",
@@ -197,7 +197,7 @@ export default function RootLayout({ children }) {
             name: "What apartment types are available in Sattva Aangane?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The project offers spacious 3 BHK, 4 BHK and Duplex 4 BHK luxury apartments.",
+              text: "The project offers spacious 3 BHK, 4 BHK and Duplex 5 BHK luxury apartments.",
             },
           },
         ],

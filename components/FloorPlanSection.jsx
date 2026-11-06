@@ -6,19 +6,19 @@ const floorPlans = [
   {
     id: 1,
     label: "3 BHK Floor Plan",
-    image: "./images/2-bhk-floorplan.webp",
+    image: "./images/3-bhk-floorplan.webp",
     alt: "3 BHK Floor Plan",
   },
   {
     id: 2,
     label: "4 BHK Floor Plan",
-    image: "./images/3-bhk-floorplan.webp",
+    image: "./images/4-bhk-floorplan.webp",
     alt: "4 BHK Floor Plan",
   },
   {
     id: 3,
     label: "Duplex Floor Plan",
-    image: "./images/3-bhk-floorplan.webp",
+    image: "./images/duplex-floorplan.webp",
     alt: "Duplex Floor Plan",
   },
 ];
@@ -121,10 +121,10 @@ possible.
 
 
     <div>
-      <h3 className="text-xl font-semibold mb-4">Duplex 4 BHK Apartments</h3>
+      <h3 className="text-xl font-semibold mb-4">Duplex 5 BHK Apartments</h3>
 
       <p className="mb-4">
-        The project's most luxurious units are the <b>Duplex 4 BHK homes (4700 - 5100 sq. ft.)</b>, spread
+        The project's most luxurious units are the <b>Duplex 5 BHK homes (4700 - 5100 sq. ft.)</b>, spread
         across two levels for families who want the most space. Key features include
       </p>
 

@@ -4,7 +4,7 @@ import DownloadCostSheetActions from "./DownloadCostSheetActions";
 const priceData = [
   { type: "3 BHK",        size: "1800 - 2300 sq. ft.",    price: "₹ 2.66 Cr* onwards" },
   { type: "4 BHK",        size: "2600 - 3000 sq. ft",  price: "₹ 3.44 Cr* onwards" },
-  { type: "Duplex 4 BHK",  size: "4700 - 5100 sq. ft",  price: "₹ 5.92 Cr* onwards" },
+  { type: "Duplex 5 BHK",  size: "4700 - 5100 sq. ft",  price: "₹ 5.92 Cr* onwards" },
 ];
 
 export default function PriceListSection() {
@@ -89,7 +89,7 @@ export default function PriceListSection() {
 
     <p>
       The project will be an advanced private residential tower located at <b>Budigere Cross on Old
-      Madras Main Road</b>. With seven towers that go up to <b>42 floors</b>, the flats have great views of
+      Madras Main Road</b>. With seven towers and 23 + 29 to 42 floors, the flats have great views of
       the city and planted green areas. The apartments are made so that they can fit both small
       families and bigger families who want more space to live.
     </p>

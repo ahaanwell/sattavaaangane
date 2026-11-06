@@ -39,7 +39,7 @@ export const metadata = {
     siteName: "Sattva Aangane",
     images: [
       {
-        url: "https://www.sattvaaangane.co/images/master-plan-banner.jpeg",
+        url: "https://www.sattvaaangane.co/images/master-plan.webp",
         width: 1200,
         height: 630,
         alt: "Sattva Aangane Master Plan Layout",
@@ -56,7 +56,7 @@ export const metadata = {
     description:
       "Discover the master plan layout of Sattva Aangane Bangalore including tower placement, amenities, green areas and project infrastructure.",
     images: [
-      "https://www.sattvaaangane.co/images/master-plan-banner.jpeg",
+      "https://www.sattvaaangane.co/images/master-plan.webp",
     ],
   },
 
@@ -107,7 +107,7 @@ export default function page() {
           "Master plan of Sattva Aangane residential project in Budigere Cross Bangalore featuring 7 towers, landscaped gardens, modern amenities and planned open spaces.",
         url: "https://www.sattvaaangane.co/master-plan",
         image:
-          "https://www.sattvaaangane.co/images/master-plan-banner.webp",
+          "https://www.sattvaaangane.co/images/master-plan.webp",
 
         address: {
           "@type": "PostalAddress",
@@ -159,7 +159,7 @@ export default function page() {
             name: "How many towers are included in Sattva Aangane master plan?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The master plan of Sattva Aangane includes 7 residential towers with 23 to 42 floors."
+              text: "The master plan of Sattva Aangane includes 7 residential towers with 23 + 29 to 42 floors."
             }
           },
           {

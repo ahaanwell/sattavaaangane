@@ -22,7 +22,7 @@ export default function MasterPlanSection() {
           <p>
             <a href="https://www.sattvaaangane.co/master-plan"><b>Sattva Aangane's master</b></a> plan calls for building a modern neighborhood with tall buildings,
 green parks, and well-thought-out services for everyday life. The development covers more than
-<b> 10 acres</b> at Budigere Cross on <b>Old Madras Main Road</b>. Its goal is to provide an easy city life
+<b> 10.3 acres</b> at Budigere Cross on <b>Old Madras Main Road</b>. Its goal is to provide an easy city life
 while keeping green spaces and open spaces on the land.
           </p>
         </div>
@@ -59,7 +59,7 @@ while keeping green spaces and open spaces on the land.
         Total Land Area
       </h3>
       <p>
-        The project is built on more than 10 acres of good land in Budigere Cross, East Bangalore. This
+        The project is built on 10.3 acres of land in Budigere Cross, East Bangalore. This
         lets the building include large apartment towers, green areas, and public places.
       </p>
     </div>
@@ -69,7 +69,7 @@ while keeping green spaces and open spaces on the land.
         Structure
       </h3>
       <p>
-        The private towers in Sattva Aangane are built with 23 to 42 floors above ground, giving residents
+        The private towers in Sattva Aangane have 23 + 29 to 42 floors above ground, giving residents
         modern high-rise living with stunning views of the area.
       </p>
     </div>
@@ -99,7 +99,7 @@ while keeping green spaces and open spaces on the land.
         Apartment Configurations
       </h3>
       <p>
-        The building has <b>3 BHK, 4 BHK, and Duplex 4 BHK flats</b>, each intended to meet the needs of a different
+        The building has <b>3 BHK, 4 BHK, and Duplex 5 BHK flats</b>, each intended to meet the needs of a different
         size family and way of life.
       </p>
     </div>

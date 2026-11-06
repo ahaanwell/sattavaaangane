@@ -54,7 +54,7 @@ export default function HeroSection() {
           <div className="flex gap-3 lg:gap-4 mb-6 justify-center lg:justify-start">
             <div className="border lg:bg-white/10 lg:border-white/20 backdrop-blur-sm rounded-xl py-3 px-5 text-center">
               <p className="text-sm lg:text-white/70">Land Area</p>
-              <p className="text-xl lg:text-xl font-extrabold">10+ Acres</p>
+              <p className="text-xl lg:text-xl font-extrabold">10.3 Acres</p>
             </div>
             <div className="border lg:bg-white/10 lg:border-white/20 backdrop-blur-sm rounded-xl py-3 px-5 text-center">
               <p className="text-sm lg:text-white/70">Total Units</p>
@@ -68,7 +68,7 @@ export default function HeroSection() {
           </p>
 
           <p className="hidden lg:block text-xl font-bold mt-3 mb-7">
-            3 & 4 BHK Apartment
+            3, 4 & 5 BHK Duplex
           </p>
 
           {/* CTA Components */}
@@ -83,7 +83,7 @@ export default function HeroSection() {
             <span className="font-semibold lg:text-white/90 text-gray-700">
               RERA No:
             </span>{" "}
-            Comming Soon
+            PRM/KA/RERA/1251/446/PR/180926/008944
           </p>
         </div>
 

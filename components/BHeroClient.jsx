@@ -1,20 +1,13 @@
 "use client";
 import { FaDownload, FaPhone } from "react-icons/fa";
 import LeadModal from "./LeadModal";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function BHeroClient() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modelHeading, SetModelHeading] = useState("");
   const [modelBtnLabel, setModelBtnLabel] = useState("");
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsModalOpen(true);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <>
       <div className="flex flex-wrap gap-4 mb-8">

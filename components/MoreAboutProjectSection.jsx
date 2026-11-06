@@ -224,16 +224,15 @@ export default function MoreAboutProjectSection() {
             </p>
 
             <h3 className="text-xl font-semibold mb-3">
-              Applied/Awaited RERA Registration Number
+              RERA Registration Details
             </h3>
 
             <p>
-              All legal and title papers have been checked and signed by the
-              right people. The project has been submitted for approval by the{" "}
-              <b>Karnataka Real Estate Regulatory Authority (K-RERA)</b>. The
-              idea will get a real registration number once RERA is accepted.
-              This number helps buyers feel safe and makes sure that
-              transactions are clear and honest.
+              Sattva Aangane has received official registration approval from
+              the <b>Karnataka Real Estate Regulatory Authority (K-RERA)</b>.
+              The project is registered under RERA Registration Number{" "}
+              <b>PRM/KA/RERA/1251/446/PR/180926/008944</b>, with approval
+              granted on <b>18 September 2026</b>.
             </p>
 
             <h3 className="text-xl font-semibold mb-3">
@@ -241,7 +240,7 @@ export default function MoreAboutProjectSection() {
             </h3>
 
             <p>
-              After the RERA permission is complete, official bank permits are
+              Following RERA approval, official bank permits are
               often given. But CRISIL and ICRA have given Sobha Limited good
               credit ratings. This means that big banks are willing to give home
               loans for the project. Leading banks will offer buyers good
@@ -554,7 +553,7 @@ export default function MoreAboutProjectSection() {
           <p>
             The company is developing Sattva Aangane at Budigere Cross on Old
             Madras Main Road in East Bangalore to carry on this tradition. The
-            project covers more than10 acres and has modern high rise towers and
+            project covers 10.3 acres and has modern high rise towers and
             premium flats built for modern city life. Sattva Aangane shows the
             developer's dedication to building high quality neighborhoods in new
             areas by featuring large homes, neatly maintained grounds, and
