@@ -1,4 +1,5 @@
 import BlogDetailsPage from "./BlogDetailsPage";
+import { notFound } from "next/navigation";
 
 
 async function fetchBlogDetails(slug) {
@@ -20,6 +21,11 @@ export default async function Page({ params }) {
   const resolvedParams = await params;
   const { blog } = resolvedParams;
   const blogData = await fetchBlogDetails(blog);
+
+  if (!blogData || blogData.slug !== blog) {
+    notFound();
+  }
+
   return <BlogDetailsPage blogData={blogData} />
 }
 
